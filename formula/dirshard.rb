@@ -5,30 +5,30 @@
 class Dirshard < Formula
   desc "Produce sharded path fragments from a filename"
   homepage "https://github.com/cdzombak/dirshard"
-  url "https://github.com/cdzombak/dirshard/archive/v1.1.6.tar.gz"
-  sha256 "f5db5f003930418399bff006c9273d1c52db8f66ac174a3ecc65f0a5f9af9a5f"
+  url "https://github.com/cdzombak/dirshard/archive/v1.1.7.tar.gz"
+  sha256 "cddc3515df12490dd666c32db0c435f2a4bdefd3d893f83f3ef42a5fc787fcd1"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/dirshard/releases/download/v1.1.6/dirshard-1.1.6-darwin-amd64.tar.gz"
-      sha256 "7c4d63540f6d19ad5708197fd4a1ccb06b9b608b1d3df1c7efffb2163868428d"
+      url "https://github.com/cdzombak/dirshard/releases/download/v1.1.7/dirshard-1.1.7-darwin-amd64.tar.gz"
+      sha256 "dd7d844e499e55da597c0f825469c888d82136f6dfebe663cf95d8757c3596c8"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/dirshard/releases/download/v1.1.6/dirshard-1.1.6-darwin-arm64.tar.gz"
-      sha256 "b13114188dc7b2bbdbd87da41f43dfbe5314b7260d664f70e9c582afe22557b7"
+      url "https://github.com/cdzombak/dirshard/releases/download/v1.1.7/dirshard-1.1.7-darwin-arm64.tar.gz"
+      sha256 "14ffe1fc6cab0cd08b44066ac08cb32424ab5ef91bf87e85fd3f1af866d76e34"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/dirshard/releases/download/v1.1.6/dirshard-1.1.6-linux-amd64.tar.gz"
-      sha256 "2c1f9ef146b50ebd9a76f0d13a4b4d8c0df16945a15c8add7befc83da553084f"
+      url "https://github.com/cdzombak/dirshard/releases/download/v1.1.7/dirshard-1.1.7-linux-amd64.tar.gz"
+      sha256 "4c1518a3080f249dcfd28dfb16a77a0377812c2157205f14b918f5a8cd14ad72"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/dirshard/releases/download/v1.1.6/dirshard-1.1.6-linux-arm64.tar.gz"
-      sha256 "f423cedbc39801eb59869c90ed7cbb9ad576a15a808de96b3bd98dc4a996d411"
+      url "https://github.com/cdzombak/dirshard/releases/download/v1.1.7/dirshard-1.1.7-linux-arm64.tar.gz"
+      sha256 "4240bd4c82bac586ded4ed567a82ac6d169ae483962e6a30b057c4d00d74a016"
     end
   end
 
@@ -37,6 +37,6 @@ class Dirshard < Formula
   end
 
   test do
-    assert_match("1.1.6", shell_output("dirshard -version"))
+    assert_match("1.1.7", shell_output("#{bin}/dirshard -version"))
   end
 end
