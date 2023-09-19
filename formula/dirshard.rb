@@ -5,13 +5,31 @@
 class Dirshard < Formula
   desc "Produce sharded path fragments from a filename"
   homepage "https://github.com/cdzombak/dirshard"
-  url "https://github.com/cdzombak/dirshard/archive/v1.1.4.tar.gz"
-  sha256 "0bea52e25f997c73a7fd75494843499247e35b21e200c2f8335cb05e2308093e"
+  url "https://github.com/cdzombak/dirshard/archive/v1.1.5.tar.gz"
+  sha256 "e43569e643e70e9f4a76041567c2d202f71195016b889a5e27726458328335b2"
 
   on_macos do
+    on_intel do
+      url "https://github.com/cdzombak/dirshard/releases/download/v1.1.5/dirshard-1.1.5-darwin-amd64.tar.gz"
+      sha256 "dc59bd543f3f3af45768f013100d1ffc0023fd42b0362b5988ec28934ca679b3"
+    end
+
+    on_arm do
+      url "https://github.com/cdzombak/dirshard/releases/download/v1.1.5/dirshard-1.1.5-darwin-arm64.tar.gz"
+      sha256 "36e1e80cdaa6e91ecad23d4d85cf3df6bf66243b7ec6bd3ddb7b7e74ad6e4f49"
+    end
   end
 
   on_linux do
+    on_intel do
+      url "https://github.com/cdzombak/dirshard/releases/download/v1.1.5/dirshard-1.1.5-linux-amd64.tar.gz"
+      sha256 "b2336bebc97aae4ba00451e4025e43b89e088ffef1db446ba86909db6a5e5729"
+    end
+
+    on_arm do
+      url "https://github.com/cdzombak/dirshard/releases/download/v1.1.5/dirshard-1.1.5-linux-arm64.tar.gz"
+      sha256 "471d357cfa16323a5358d79ab8db39193a86fa8283d728668f8087f0da5a4c07"
+    end
   end
 
   def install
@@ -19,6 +37,6 @@ class Dirshard < Formula
   end
 
   test do
-    assert_match("1.1.4", shell_output("dirshard -version"))
+    assert_match("1.1.5", shell_output("dirshard -version"))
   end
 end
