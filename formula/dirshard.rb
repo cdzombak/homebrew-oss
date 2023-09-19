@@ -5,8 +5,8 @@
 class Dirshard < Formula
   desc "Produce sharded path fragments from a filename"
   homepage "https://github.com/cdzombak/dirshard"
-  url "https://github.com/cdzombak/dirshard/archive/v1.1.3.tar.gz"
-  sha256 "81bdc5b9b795cfa20c55c3dc8ae778653727ad3a83caf97323fabc052ab27f89"
+  url "https://github.com/cdzombak/dirshard/archive/v1.1.4.tar.gz"
+  sha256 "0bea52e25f997c73a7fd75494843499247e35b21e200c2f8335cb05e2308093e"
 
   on_macos do
   end
@@ -19,6 +19,6 @@ class Dirshard < Formula
   end
 
   test do
-    assert_match("1.1.3", shell_output("dirshard -version"))
+    assert_match("1.1.4", shell_output("dirshard -version"))
   end
 end
