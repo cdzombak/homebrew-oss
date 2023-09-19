@@ -1,4 +1,4 @@
-# Cdzombak Oss
+# @cdzombak/oss
 
 ## How do I install these formulae?
 
@@ -6,6 +6,8 @@
 
 Or `brew tap cdzombak/oss` and then `brew install <formula>`.
 
-## Documentation
+## Available Software
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+<!-- project_table_start -->
+TABLE HERE
+<!-- project_table_end -->
