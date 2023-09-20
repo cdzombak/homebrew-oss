@@ -1,5 +1,7 @@
+---
 name: brew pr-pull
-on:
+
+"on":
   pull_request_target:
     types:
       - labeled
