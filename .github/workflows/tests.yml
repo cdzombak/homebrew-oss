@@ -1,9 +1,12 @@
-name: brew test-bot
-on:
+---
+name: Homebrew Tests
+
+"on":
   push:
     branches:
       - main
   pull_request:
+
 jobs:
   test-bot:
     strategy:
