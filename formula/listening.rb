@@ -5,8 +5,8 @@
 class Listening < Formula
   desc "List processes listening for network connections listening is an easy-to-use, c"
   homepage "https://github.com/cdzombak/listening"
-  url "https://github.com/cdzombak/listening/archive/v0.0.2.tar.gz"
-  sha256 "44fadc70390dbf63774e5932d18a1612cfcc25fc0c907437dc1d89fc7f05fcdd"
+  url "https://github.com/cdzombak/listening/archive/v1.0.0.tar.gz"
+  sha256 "665c536002199cc7c9decdca2431b4a5c2c582fe0427c7fe3989ba222aa59bfe"
   license "LGPL-3.0"
 
   def install
@@ -14,6 +14,6 @@ class Listening < Formula
   end
 
   test do
-    assert_match("0.0.2", shell_output("#{bin}/listening -version"))
+    assert_match("1.0.0", shell_output("#{bin}/listening -version"))
   end
 end
