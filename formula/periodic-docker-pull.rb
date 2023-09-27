@@ -3,18 +3,18 @@
 
 # This file was automatically generated. DO NOT EDIT.
 class PeriodicDockerPull < Formula
-  desc "Automatically pull a list of Docker image/tags on a regular basis."
+  desc "Automatically pull a list of Docker image/tags on a regular basis"
   homepage "https://github.com/cdzombak/periodic-docker-pull"
-  url "https://github.com/cdzombak/periodic-docker-pull/releases/download/v0.0.3/periodic-docker-pull-0.0.3-all.tar.gz"
-  sha256 "407a64501ea9e3eaa8ed83e7da6c4eec2225817c6ae46c9aa92212717141da53  ./gh-release/periodic-docker-pull-0.0.3-all.tar.gz"
+  url "https://github.com/cdzombak/periodic-docker-pull/releases/download/v0.0.5/periodic-docker-pull-0.0.5-all.tar.gz"
+  sha256 "3f911fde770b483a0fa7afcf177ac95da1f62f03fa1cc9585750e66bb968caba"
   license "LGPL-3.0"
 
   def install
-    bin.install "_periodic-docker-pull"
+    bin.install "_periodic_docker_pull"
   end
 
   test do
-    assert_match("0.0.3", shell_output("#{bin}/_periodic-docker-pull -version"))
+    assert_match("0.0.5", shell_output("#{bin}/_periodic_docker_pull -version"))
   end
 
   service do
