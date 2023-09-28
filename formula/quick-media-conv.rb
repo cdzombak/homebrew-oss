@@ -5,8 +5,8 @@
 class QuickMediaConv < Formula
   desc "Scripts for quick ffmpeg/imagemagick conversions"
   homepage "https://github.com/cdzombak/quick-media-conv"
-  url "https://github.com/cdzombak/quick-media-conv/releases/download/v1.0.4/quick-media-conv-1.0.4-all.tar.gz"
-  sha256 "033306f8a4269fc336f03ece5f17939eae0d4f9a4d59cc23c83c3c2d3e672a7c"
+  url "https://github.com/cdzombak/quick-media-conv/releases/download/v1.0.5/quick-media-conv-1.0.5-all.tar.gz"
+  sha256 "bcd5a4f68bcff9a047e151d8fa78145b7de11fd2b156054202b77b92f758f308"
   license "LGPL-3.0"
 
   def install
@@ -20,12 +20,12 @@ class QuickMediaConv < Formula
   end
 
   test do
-    assert_match("1.0.4", shell_output("#{bin}/flv2mp4 --version"))
-    assert_match("1.0.4", shell_output("#{bin}/toalac --version"))
-    assert_match("1.0.4", shell_output("#{bin}/tom4a --version"))
-    assert_match("1.0.4", shell_output("#{bin}/tomp4 --version"))
-    assert_match("1.0.4", shell_output("#{bin}/tomp4-hq --version"))
-    assert_match("1.0.4", shell_output("#{bin}/tomp4-robust --version"))
-    assert_match("1.0.4", shell_output("#{bin}/topng --version"))
+    assert_match("1.0.5", shell_output("#{bin}/flv2mp4 --version"))
+    assert_match("1.0.5", shell_output("#{bin}/toalac --version"))
+    assert_match("1.0.5", shell_output("#{bin}/tom4a --version"))
+    assert_match("1.0.5", shell_output("#{bin}/tomp4 --version"))
+    assert_match("1.0.5", shell_output("#{bin}/tomp4-hq --version"))
+    assert_match("1.0.5", shell_output("#{bin}/tomp4-robust --version"))
+    assert_match("1.0.5", shell_output("#{bin}/topng --version"))
   end
 end
