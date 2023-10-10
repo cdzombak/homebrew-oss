@@ -9,8 +9,11 @@ Or `brew tap cdzombak/oss` and then `brew install <formula>`.
 ## Available Software
 
 <!-- project_table_start -->
-| Project                                            | Description                                                                     | Install                  |
-| -------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------ |
-| [dirshard](https://github.com/cdzombak/dirshard)   | Produce sharded path fragments from a filename                                  | `brew install dirshard`  |
-| [listening](https://github.com/cdzombak/listening) | List processes listening for network connections listening is an easy-to-use, c | `brew install listening` |
+| Project                                                                  | Description                                                       | Install                             |
+| ------------------------------------------------------------------------ | ----------------------------------------------------------------- | ----------------------------------- |
+| [dirshard](https://github.com/cdzombak/dirshard)                         | Produce sharded path fragments from a filename                    | `brew install dirshard`             |
+| [listening](https://github.com/cdzombak/listening)                       | List processes listening for network connections                  | `brew install listening`            |
+| [periodic-docker-pull](https://github.com/cdzombak/periodic-docker-pull) | Automatically pull a list of Docker image/tags on a regular basis | `brew install periodic-docker-pull` |
+| [quick-media-conv](https://github.com/cdzombak/quick-media-conv)         | Scripts for quick ffmpeg/imagemagick conversions                  | `brew install quick-media-conv`     |
+| [windowstack2](https://github.com/cdzombak/windowstack2)                 | “wait, what was i doing?”                                         | `brew install windowstack2`         |
 <!-- project_table_end -->
