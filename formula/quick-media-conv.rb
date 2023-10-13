@@ -6,7 +6,7 @@ class QuickMediaConv < Formula
   desc "Scripts for quick ffmpeg/imagemagick conversions"
   homepage "https://github.com/cdzombak/quick-media-conv"
   url "https://github.com/cdzombak/quick-media-conv/releases/download/v1.1.2/quick-media-conv-1.1.2-all.tar.gz"
-  sha256 "5de5c2b899272b137f053a5a0924db026a9a1df46bc798e07da9ca8b0f32ec8f"
+  sha256 "bc72c83a869574b82f8ca705a2b102f4bf1dc2e35687c771956e8f88e562fa92"
   license "LGPL-3.0"
 
   def install
