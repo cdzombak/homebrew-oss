@@ -15,5 +15,6 @@ Or `brew tap cdzombak/oss` and then `brew install <formula>`.
 | [listening](https://github.com/cdzombak/listening)                       | List processes listening for network connections                  | `brew install listening`            |
 | [periodic-docker-pull](https://github.com/cdzombak/periodic-docker-pull) | Automatically pull a list of Docker image/tags on a regular basis | `brew install periodic-docker-pull` |
 | [quick-media-conv](https://github.com/cdzombak/quick-media-conv)         | Scripts for quick ffmpeg/imagemagick conversions                  | `brew install quick-media-conv`     |
-| [windowstack2](https://github.com/cdzombak/windowstack2)                 | “wait, what was i doing?”                                         | `brew install windowstack2`         |
+| [unshorten](https://github.com/cdzombak/unshorten)                       | Simple, verbose url unshortener                                   | `brew install unshorten`            |
+| [windowstack2](https://github.com/cdzombak/windowstack2)                 | Keep a log of frontmost macOS window titles in your terminal      | `brew install windowstack2`         |
 <!-- project_table_end -->
