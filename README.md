@@ -17,4 +17,5 @@ Or `brew tap cdzombak/oss` and then `brew install <formula>`.
 | [quick-media-conv](https://github.com/cdzombak/quick-media-conv)         | Scripts for quick ffmpeg/imagemagick conversions                  | `brew install quick-media-conv`     |
 | [unshorten](https://github.com/cdzombak/unshorten)                       | Simple, verbose url unshortener                                   | `brew install unshorten`            |
 | [windowstack2](https://github.com/cdzombak/windowstack2)                 | Keep a log of frontmost macOS window titles in your terminal      | `brew install windowstack2`         |
+| [wxcal](https://github.com/cdzombak/wxcal)                               | Generate an ical feed from the weathergov forecast api            | `brew install wxcal`                |
 <!-- project_table_end -->
