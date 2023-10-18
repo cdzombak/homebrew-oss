@@ -13,6 +13,7 @@ Or `brew tap cdzombak/oss` and then `brew install <formula>`.
 | ------------------------------------------------------------------------ | ----------------------------------------------------------------- | ----------------------------------- |
 | [dirshard](https://github.com/cdzombak/dirshard)                         | Produce sharded path fragments from a filename                    | `brew install dirshard`             |
 | [listening](https://github.com/cdzombak/listening)                       | List processes listening for network connections                  | `brew install listening`            |
+| [mastodon-post](https://github.com/cdzombak/mastodon-post)               | Simplest possible cli tool for posting to mastodon                | `brew install mastodon-post`        |
 | [periodic-docker-pull](https://github.com/cdzombak/periodic-docker-pull) | Automatically pull a list of Docker image/tags on a regular basis | `brew install periodic-docker-pull` |
 | [quick-media-conv](https://github.com/cdzombak/quick-media-conv)         | Scripts for quick ffmpeg/imagemagick conversions                  | `brew install quick-media-conv`     |
 | [unshorten](https://github.com/cdzombak/unshorten)                       | Simple, verbose url unshortener                                   | `brew install unshorten`            |
