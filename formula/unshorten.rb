@@ -5,31 +5,31 @@
 class Unshorten < Formula
   desc "Simple, verbose url unshortener"
   homepage "https://github.com/cdzombak/unshorten"
-  url "https://github.com/cdzombak/unshorten/archive/v1.0.0.tar.gz"
-  sha256 "2c2e42b5fbc9a86fc65a4ad6aba5897009c8c7ac698c76d651280373df600a60"
+  url "https://github.com/cdzombak/unshorten/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "bb7cceee49473642de60ac7b489130746f7c1e6d7f0d1660596331dc3aebc8da"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/unshorten/releases/download/v1.0.0/unshorten-1.0.0-darwin-amd64.tar.gz"
-      sha256 "5dc3c0130c7ed4c8079dffffb8dc89aa3a3ebdb396bfc6d021f400ecf64d1508"
+      url "https://github.com/cdzombak/unshorten/releases/download/v1.0.1/unshorten-1.0.1-darwin-amd64.tar.gz"
+      sha256 "5e6442eaddba30d3564cc0f600047f959cb0bade2eb1d8f8dcc7f3f5a1f9d9a1"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/unshorten/releases/download/v1.0.0/unshorten-1.0.0-darwin-arm64.tar.gz"
-      sha256 "79fe04bc5d5b85e1f1e637b29ef0f0284abaad99da57dfeeb4990f8c2bd1a64a"
+      url "https://github.com/cdzombak/unshorten/releases/download/v1.0.1/unshorten-1.0.1-darwin-arm64.tar.gz"
+      sha256 "06441629d3c3e85c6f0e3e6883ff28be8598a3cc06092d3a88cb35727ae633c9"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/unshorten/releases/download/v1.0.0/unshorten-1.0.0-linux-amd64.tar.gz"
-      sha256 "a29ce3c7e3062ab18285fb585458a3d3034383c2591ed4523b242c62961a6ff2"
+      url "https://github.com/cdzombak/unshorten/releases/download/v1.0.1/unshorten-1.0.1-linux-amd64.tar.gz"
+      sha256 "62529a2ed3885ec5768eecf0ac22488ccbc431e5eb4e57f3db55055ea149c8a0"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/unshorten/releases/download/v1.0.0/unshorten-1.0.0-linux-arm64.tar.gz"
-      sha256 "b4b392ad54892f5959ffc15d34f66481685cf0930d8cc672afdfa49d8b74fe20"
+      url "https://github.com/cdzombak/unshorten/releases/download/v1.0.1/unshorten-1.0.1-linux-arm64.tar.gz"
+      sha256 "307c1f38f278f3be457ce3ddc135d408a51f3494f49b1a71160f96923b206cc6"
     end
   end
 
@@ -38,6 +38,6 @@ class Unshorten < Formula
   end
 
   test do
-    assert_match("1.0.0", shell_output("#{bin}/unshorten -version"))
+    assert_match("1.0.1", shell_output("#{bin}/unshorten -version"))
   end
 end
