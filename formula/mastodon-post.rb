@@ -5,31 +5,31 @@
 class MastodonPost < Formula
   desc "Simplest possible cli tool for posting to mastodon"
   homepage "https://github.com/cdzombak/mastodon-post"
-  url "https://github.com/cdzombak/mastodon-post/archive/v1.0.0.tar.gz"
-  sha256 "37934d4f6ff0beff6e0a0062f6f1568edd3c063258da085f7040af806da6df88"
+  url "https://github.com/cdzombak/mastodon-post/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "70e335c3a22b92621bc948b384f2eda4c0ee95a436d5119674f4d5b90aec00ff"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/mastodon-post/releases/download/v1.0.0/mastodon-post-1.0.0-darwin-amd64.tar.gz"
-      sha256 "9e78693a37ca3f74fcd71199821e5f470f788372f80415fece8c31d136bb2cca"
+      url "https://github.com/cdzombak/mastodon-post/releases/download/v1.0.1/mastodon-post-1.0.1-darwin-amd64.tar.gz"
+      sha256 "47c71307aacd30e63e9bc33e4096def2fd6eb08e4219d3c1aea6125814f9fa11"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/mastodon-post/releases/download/v1.0.0/mastodon-post-1.0.0-darwin-arm64.tar.gz"
-      sha256 "99fd6d69357029220f0dca2bd1f0f328d58308cb59b1e02fb328bf6e2d530841"
+      url "https://github.com/cdzombak/mastodon-post/releases/download/v1.0.1/mastodon-post-1.0.1-darwin-arm64.tar.gz"
+      sha256 "1ffffe94c77cab246aad7caa5cc02c86db5cb959968e1a7de3b9d8fad2e6afbf"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/mastodon-post/releases/download/v1.0.0/mastodon-post-1.0.0-linux-amd64.tar.gz"
-      sha256 "473a87d9ce4941b7c134ed31df00ffb33ac544086a6c3b84510362d5619ec679"
+      url "https://github.com/cdzombak/mastodon-post/releases/download/v1.0.1/mastodon-post-1.0.1-linux-amd64.tar.gz"
+      sha256 "e9932464074564779292ade8c9950f23014ea25276e8a0249966296307bef686"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/mastodon-post/releases/download/v1.0.0/mastodon-post-1.0.0-linux-arm64.tar.gz"
-      sha256 "a86ffcb2c19e8669294d6738dca1f774ce85cab92b75a75e89c6f7e2a4d07f2b"
+      url "https://github.com/cdzombak/mastodon-post/releases/download/v1.0.1/mastodon-post-1.0.1-linux-arm64.tar.gz"
+      sha256 "226c3e07c9aa8ee13df271103dfa74be502c5f1ff277e37a5bb56c9b403862e2"
     end
   end
 
@@ -38,6 +38,6 @@ class MastodonPost < Formula
   end
 
   test do
-    assert_match("1.0.0", shell_output("#{bin}/mastodon-post -version"))
+    assert_match("1.0.1", shell_output("#{bin}/mastodon-post -version"))
   end
 end
