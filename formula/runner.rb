@@ -5,31 +5,31 @@
 class Runner < Formula
   desc "Lightweight wrapper for better cron jobs and containers"
   homepage "https://github.com/cdzombak/runner"
-  url "https://github.com/cdzombak/runner/archive/refs/tags/v2.8.2.tar.gz"
-  sha256 "feff4274fc373f561899ee8221a438db63f1a6c43e000b2170677ca4b09e1de4"
+  url "https://github.com/cdzombak/runner/archive/refs/tags/v2.8.3.tar.gz"
+  sha256 "f6a283c968f14254ff36b956cb5967c336afb64fa0e620ba3ebfa5da86e736d9"
   license "LGPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/runner/releases/download/v2.8.2/runner-2.8.2-darwin-amd64.tar.gz"
-      sha256 "87fc4526ffb46726fd34b8910a66b68f97fe1c7d02b7d332ce037a2c7a1a5074"
+      url "https://github.com/cdzombak/runner/releases/download/v2.8.3/runner-2.8.3-darwin-amd64.tar.gz"
+      sha256 "3bec3bf8664deb80be3211e00194cb8768a99ce7ca40b31bec63d336171a55ea"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/runner/releases/download/v2.8.2/runner-2.8.2-darwin-arm64.tar.gz"
-      sha256 "517b0d5028942e6028c84cad7824355a94826374ae612a200a0a763137838aad"
+      url "https://github.com/cdzombak/runner/releases/download/v2.8.3/runner-2.8.3-darwin-arm64.tar.gz"
+      sha256 "c6d1c045937698bf209e5d0e4d940627b71c3bccd0db4966cad8942ab407f2f3"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/runner/releases/download/v2.8.2/runner-2.8.2-linux-amd64.tar.gz"
-      sha256 "015908d291614f9f1a279efc41e630752b69f941ed7f99e00fa7800b596fd9c1"
+      url "https://github.com/cdzombak/runner/releases/download/v2.8.3/runner-2.8.3-linux-amd64.tar.gz"
+      sha256 "f589d14255d5e4115e89e5854952d5030050b9c27c43d73bba1c81ceedc08135"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/runner/releases/download/v2.8.2/runner-2.8.2-linux-arm64.tar.gz"
-      sha256 "32034118caddf12d2d2b364f2fccabf52043049310d69160212f1b9ca5dfd03e"
+      url "https://github.com/cdzombak/runner/releases/download/v2.8.3/runner-2.8.3-linux-arm64.tar.gz"
+      sha256 "3a5100bc1c317fac696a65755cb15f46c8cc10373a84688ba7de37269da4992b"
     end
   end
 
@@ -38,6 +38,6 @@ class Runner < Formula
   end
 
   test do
-    assert_match("2.8.2", shell_output("#{bin}/runner -version"))
+    assert_match("2.8.3", shell_output("#{bin}/runner -version"))
   end
 end
