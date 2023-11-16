@@ -5,31 +5,31 @@
 class EnergybridgeToInfluxdb < Formula
   desc "Pull electricity usage readings from an energy bridge via mqtt and ship them to"
   homepage "https://github.com/cdzombak/energybridge_to_influxdb"
-  url "https://github.com/cdzombak/energybridge_to_influxdb/archive/refs/tags/v1.0.3.tar.gz"
-  sha256 "3c3361e8d430cff027949a4ca7ac776d254ef0f3dce0f11d4af2e67307a28c36"
+  url "https://github.com/cdzombak/energybridge_to_influxdb/archive/refs/tags/v1.0.4.tar.gz"
+  sha256 "6b4e11719259805bbb310ad4c378928f7beacc6f50deea64dc066ecc6c3bfa35"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/energybridge_to_influxdb/releases/download/v1.0.3/energybridge_to_influxdb-1.0.3-darwin-amd64.tar.gz"
-      sha256 "7284f556f1ea2c348c3c743fa22f998498441e05a20a3823a082346b15e30987"
+      url "https://github.com/cdzombak/energybridge_to_influxdb/releases/download/v1.0.4/energybridge_to_influxdb-1.0.4-darwin-amd64.tar.gz"
+      sha256 "e7658151519c27e60e417d613efdb6aa02061d765e4b729c437a07c4aadecd05"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/energybridge_to_influxdb/releases/download/v1.0.3/energybridge_to_influxdb-1.0.3-darwin-arm64.tar.gz"
-      sha256 "e2aa608de1200b1fa607a0030c8ac0a14fd79a324871a5dfa7796d1092736083"
+      url "https://github.com/cdzombak/energybridge_to_influxdb/releases/download/v1.0.4/energybridge_to_influxdb-1.0.4-darwin-arm64.tar.gz"
+      sha256 "5a4d5217ddf156490e9ed49cb2b27a12608a1d5de794ae32ce3793cbfc6e8665"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/energybridge_to_influxdb/releases/download/v1.0.3/energybridge_to_influxdb-1.0.3-linux-amd64.tar.gz"
-      sha256 "025ddfb585253693bba9590f62ec2284bfc06e173ec6e1e7723e14d0d71df8c2"
+      url "https://github.com/cdzombak/energybridge_to_influxdb/releases/download/v1.0.4/energybridge_to_influxdb-1.0.4-linux-amd64.tar.gz"
+      sha256 "621d74d3c2331351bc4ce1c147b888a8de27c4db5de011e7046e6758ff0c8ad7"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/energybridge_to_influxdb/releases/download/v1.0.3/energybridge_to_influxdb-1.0.3-linux-arm64.tar.gz"
-      sha256 "aff03e9a606b0ab6b0dae099420fec5deb6761f7568b6f4f4e3b4f33eb73e868"
+      url "https://github.com/cdzombak/energybridge_to_influxdb/releases/download/v1.0.4/energybridge_to_influxdb-1.0.4-linux-arm64.tar.gz"
+      sha256 "8567536d8b20c428ee90e459db7d1f53dd33af2d7e08eb9bfd30fa5138e8555f"
     end
   end
 
@@ -38,6 +38,6 @@ class EnergybridgeToInfluxdb < Formula
   end
 
   test do
-    assert_match("1.0.3", shell_output("#{bin}/energybridge_to_influxdb -version"))
+    assert_match("1.0.4", shell_output("#{bin}/energybridge_to_influxdb -version"))
   end
 end
