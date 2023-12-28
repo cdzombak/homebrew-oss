@@ -5,31 +5,31 @@
 class Wxcal < Formula
   desc "Generate an ical feed from the weathergov forecast api"
   homepage "https://github.com/cdzombak/wxcal"
-  url "https://github.com/cdzombak/wxcal/archive/refs/tags/v1.0.2.tar.gz"
-  sha256 "365b02ff9ba9f9443dbd64aad93c5a9d42e78c296322f57363368b91db5f6a2b"
+  url "https://github.com/cdzombak/wxcal/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "09e1c1aed448ef4b58a9a28566d255c326b6736743207d2843fac3b4e15c0aca"
   license "LGPL-2.1"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/wxcal/releases/download/v1.0.2/wxcal-1.0.2-darwin-amd64.tar.gz"
-      sha256 "cac468ae076ceb5534a99da8cdbe17ae5a3f1314a58e2a83061553e6cf281fe3"
+      url "https://github.com/cdzombak/wxcal/releases/download/v1.1.0/wxcal-1.1.0-darwin-amd64.tar.gz"
+      sha256 "c450d1a337e56ef48c5ea6864688d91646e42566c029e4c8f2f5c77ae29e9f71"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/wxcal/releases/download/v1.0.2/wxcal-1.0.2-darwin-arm64.tar.gz"
-      sha256 "652c1e985f311835205620471fa4d69e33a1e89fe5fa4e8e67be115f332ddf7c"
+      url "https://github.com/cdzombak/wxcal/releases/download/v1.1.0/wxcal-1.1.0-darwin-arm64.tar.gz"
+      sha256 "4d279bcb2784b3c331924c42fb8364b2f481649183a2b44459600d8480afa620"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/wxcal/releases/download/v1.0.2/wxcal-1.0.2-linux-amd64.tar.gz"
-      sha256 "1d813c3958f32049b21d0170099dfa26cdab4eca3efa3ca12a5cd045d8715dd3"
+      url "https://github.com/cdzombak/wxcal/releases/download/v1.1.0/wxcal-1.1.0-linux-amd64.tar.gz"
+      sha256 "776a8881616270cd5278052645d45d100d6ae8534551cf9fb64c66886a1ba667"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/wxcal/releases/download/v1.0.2/wxcal-1.0.2-linux-arm64.tar.gz"
-      sha256 "5612fc40dc935718ba47cf3601aba7ce062c9bf9595f86dfa126fc9191a2e0ca"
+      url "https://github.com/cdzombak/wxcal/releases/download/v1.1.0/wxcal-1.1.0-linux-arm64.tar.gz"
+      sha256 "b0d6274a49c997d6eaa4b25b3d525f9a545c5b4fae803062a53922bfc550d78d"
     end
   end
 
@@ -38,6 +38,6 @@ class Wxcal < Formula
   end
 
   test do
-    assert_match("1.0.2", shell_output("#{bin}/wxcal -version"))
+    assert_match("1.1.0", shell_output("#{bin}/wxcal -version"))
   end
 end
