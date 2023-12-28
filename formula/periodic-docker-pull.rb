@@ -5,8 +5,8 @@
 class PeriodicDockerPull < Formula
   desc "Automatically pull a list of Docker image/tags on a regular basis"
   homepage "https://github.com/cdzombak/periodic-docker-pull"
-  url "https://github.com/cdzombak/periodic-docker-pull/releases/download/v1.0.0/periodic-docker-pull-1.0.0-all.tar.gz"
-  sha256 "0324a04fc40fcccaf87495f3928ea27fc07e8ac4d802a193b0f9f229a7e8bfc6"
+  url "https://github.com/cdzombak/periodic-docker-pull/releases/download/v1.1.0/periodic-docker-pull-1.1.0-all.tar.gz"
+  sha256 "b489e91a2a00681b9e201116160e30322c45fb2dd6ab6e9af84d7875104fecc8"
   license "LGPL-3.0"
 
   def install
@@ -14,7 +14,7 @@ class PeriodicDockerPull < Formula
   end
 
   test do
-    assert_match("1.0.0", shell_output("#{bin}/_periodic_docker_pull -version"))
+    assert_match("1.1.0", shell_output("#{bin}/_periodic_docker_pull -version"))
   end
 
   service do
