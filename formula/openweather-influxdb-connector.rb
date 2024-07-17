@@ -5,31 +5,32 @@
 class OpenweatherInfluxdbConnector < Formula
   desc "Write current weather conditions from openweathermap to influxdb"
   homepage "https://github.com/cdzombak/openweather-influxdb-connector"
-  url "https://github.com/cdzombak/openweather-influxdb-connector/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "176c9556e08047e90422b2983e45dbebce6a7657374878d3849c99fa9b3da312"
+  url "https://github.com/cdzombak/openweather-influxdb-connector/archive/refs/tags/v1.1.0.tar.gz"
+  version "1.1.0"
+  sha256 "a19e68b3f8188880987977f4bd6230025de9305d390bea866088f870a5863eff"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/openweather-influxdb-connector/releases/download/v1.0.0/openweather-influxdb-connector-1.0.0-darwin-amd64.tar.gz"
-      sha256 "094e37fe7eac10706cc9fe65c2eb872cbbb8a4f1d5f85cefdc2b25e33c7bd20c"
+      url "https://github.com/cdzombak/openweather-influxdb-connector/releases/download/v1.1.0/openweather-influxdb-connector-1.1.0-darwin-amd64.tar.gz"
+      sha256 "602fbc37185078b1cafe823badaa38f1b5ffd5aaf2b6e740e189e34fd4eb71a1"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/openweather-influxdb-connector/releases/download/v1.0.0/openweather-influxdb-connector-1.0.0-darwin-arm64.tar.gz"
-      sha256 "91ac3835c4d238dda1142228f9ae0417a514ca831886a59bdbacd2db6a6ee6ae"
+      url "https://github.com/cdzombak/openweather-influxdb-connector/releases/download/v1.1.0/openweather-influxdb-connector-1.1.0-darwin-arm64.tar.gz"
+      sha256 "0e2dd815e5e0d72bf59a3fc7f81021af7cbff74564ddc98727decf0613e5f6ee"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/openweather-influxdb-connector/releases/download/v1.0.0/openweather-influxdb-connector-1.0.0-linux-amd64.tar.gz"
-      sha256 "f761b605d4f875f5a9db04b94d241407841f7f98575efc310d65caf6a037ddd6"
+      url "https://github.com/cdzombak/openweather-influxdb-connector/releases/download/v1.1.0/openweather-influxdb-connector-1.1.0-linux-amd64.tar.gz"
+      sha256 "23ba10d150c10976c767bfc0707e7d5db6f72ec114eca27584a2ad989102726f"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/openweather-influxdb-connector/releases/download/v1.0.0/openweather-influxdb-connector-1.0.0-linux-arm64.tar.gz"
-      sha256 "47f652ffd8a0667a0197c7304f0e9b9428dc25f11408148b36de9c0463b9fbec"
+      url "https://github.com/cdzombak/openweather-influxdb-connector/releases/download/v1.1.0/openweather-influxdb-connector-1.1.0-linux-arm64.tar.gz"
+      sha256 "d294f25fca1f611960dbf1a67938e916023073b20595d3e3dac41ac490dc70df"
     end
   end
 
@@ -38,6 +39,6 @@ class OpenweatherInfluxdbConnector < Formula
   end
 
   test do
-    assert_match("1.0.0", shell_output("#{bin}/openweather-influxdb-connector -version"))
+    assert_match("1.1.0", shell_output("#{bin}/openweather-influxdb-connector -version"))
   end
 end
