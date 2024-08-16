@@ -11,7 +11,7 @@ Or `brew tap cdzombak/oss` and then `brew install <formula>`.
 <!-- project_table_start -->
 | Project                                                                                      | Description                                                                     | Install                                       |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------- |
-| [cidrtool](https://github.com/cdzombak/cidrtool)                                             | A simple command line tool to manipulate CIDR blocks                            | `brew install cidrtool`                       |
+| [cidrtool](https://github.com/cdzombak/cidrtool)                                             | Simple command-line tool for manipulating CIDR blocks                           | `brew install cidrtool`                       |
 | [dirshard](https://github.com/cdzombak/dirshard)                                             | Produce sharded path fragments from a filename                                  | `brew install dirshard`                       |
 | [energybridge-to-influxdb](https://github.com/cdzombak/energybridge_to_influxdb)             | Pull electricity usage readings from an energy bridge via mqtt and ship them to | `brew install energybridge-to-influxdb`       |
 | [gmail-cleaner](https://github.com/cdzombak/gmail-cleaner)                                   | Delete old messages in a chosen label from your gmail account                   | `brew install gmail-cleaner`                  |
