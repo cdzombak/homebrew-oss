@@ -5,8 +5,8 @@
 class MacosUpsMqttConnector < Formula
   desc "Send current UPS status from your mac to MQTT"
   homepage "https://github.com/cdzombak/macos-ups-mqtt-connector"
-  url "https://github.com/cdzombak/macos-ups-mqtt-connector/releases/download/v0.0.3/macos-ups-mqtt-connector-0.0.3-all.tar.gz"
-  sha256 "5bf0d43ce1092927e0c556e89b459bc0bb466d8fab364b33db54e6ed1220b22b"
+  url "https://github.com/cdzombak/macos-ups-mqtt-connector/releases/download/v0.0.4/macos-ups-mqtt-connector-0.0.4-all.tar.gz"
+  sha256 "22f66fc13af896cf34bc82349b7cbd5cac63447d531fc7f46861f6b48ea50142"
   license "LGPL-3.0"
 
   def install
@@ -14,6 +14,6 @@ class MacosUpsMqttConnector < Formula
   end
 
   test do
-    assert_match("0.0.3", shell_output("#{bin}/macos-ups-mqtt-connector -version"))
+    assert_match("0.0.4", shell_output("#{bin}/macos-ups-mqtt-connector -version"))
   end
 end
