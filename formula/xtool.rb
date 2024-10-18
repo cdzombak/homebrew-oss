@@ -5,20 +5,20 @@
 class Xtool < Formula
   desc "Photography workflow helper, mainly focused on exif operations"
   homepage "https://github.com/cdzombak/xtool"
-  url "https://github.com/cdzombak/xtool/archive/refs/tags/v1.0.0.tar.gz"
-  version "1.0.0"
-  sha256 "f07babfbf61f3cedfb649174ef58d74805371dab98763d043d2d621587a9cb53"
+  url "https://github.com/cdzombak/xtool/archive/refs/tags/v1.0.1.tar.gz"
+  version "1.0.1"
+  sha256 "643d7030aa9964266db82e10ee8727646e0f8ec2514722bd89a08c2c6b735d47"
   license "GPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/xtool/releases/download/v1.0.0/xtool-1.0.0-darwin-amd64.tar.gz"
-      sha256 "ea6ab90b400b87a9bc8ff3bc0b1f2d8b72151be0252e3331032480bcd83f934d"
+      url "https://github.com/cdzombak/xtool/releases/download/v1.0.1/xtool-1.0.1-darwin-amd64.tar.gz"
+      sha256 "72e9e895888c0cdeb390f9557778b26f5d4ebc08cdc2c2a3b48e4052b9434afa"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/xtool/releases/download/v1.0.0/xtool-1.0.0-darwin-arm64.tar.gz"
-      sha256 "cb56e70606d4eeed081b8a741370e41e1f206a4edd23dc0767e36b17b415f7ba"
+      url "https://github.com/cdzombak/xtool/releases/download/v1.0.1/xtool-1.0.1-darwin-arm64.tar.gz"
+      sha256 "483da75be3e26628fc29bf7ed9d7f1a478107ab90775364e3ca6e4846ab47daa"
     end
   end
 
@@ -27,6 +27,6 @@ class Xtool < Formula
   end
 
   test do
-    assert_match("1.0.0", shell_output("#{bin}/xtool version"))
+    assert_match("1.0.1", shell_output("#{bin}/xtool version"))
   end
 end
