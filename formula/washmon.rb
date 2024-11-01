@@ -5,32 +5,32 @@
 class Washmon < Formula
   desc "Figures out when a load of laundry is done and reminds you about it peri"
   homepage "https://github.com/cdzombak/washmon"
-  url "https://github.com/cdzombak/washmon/archive/refs/tags/v0.0.1.tar.gz"
-  version "0.0.1"
-  sha256 "9f06e195a68946ce3d9b17b988d92c691ff75aa147f4f4e12506c2bf1f1e7a78"
+  url "https://github.com/cdzombak/washmon/archive/refs/tags/v.0.0.2.tar.gz"
+  version ".0.0.2"
+  sha256 "7bd118b3ad29a7d5f722d26af74303140eb00082126576b3e1ae2ef790f6eef0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/washmon/releases/download/v0.0.1/washmon-0.0.1-darwin-amd64.tar.gz"
-      sha256 "5d4e8543023fb887b42092117dfcc91d9c952c33c8e4db7484ba8d9712c688af"
+      url "https://github.com/cdzombak/washmon/releases/download/v.0.0.2/washmon-.0.0.2-darwin-amd64.tar.gz"
+      sha256 "e3a72d00c1cd210cf78e6a1bbf102d3e5311ed3e786e79f053be272c0747f035"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/washmon/releases/download/v0.0.1/washmon-0.0.1-darwin-arm64.tar.gz"
-      sha256 "3429de1be553b4954fbba426ac7136242008f257611125284c2d70d1fc113575"
+      url "https://github.com/cdzombak/washmon/releases/download/v.0.0.2/washmon-.0.0.2-darwin-arm64.tar.gz"
+      sha256 "6670e70beba3bead3f0b34aec4a6c3799aee3b821e32dee621f29f3dd6928e4d"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/washmon/releases/download/v0.0.1/washmon-0.0.1-linux-amd64.tar.gz"
-      sha256 "c67a19acd8a11c1836c32df0b886dfec1b4e8bc26a2ae01dc2e38823e14b0db9"
+      url "https://github.com/cdzombak/washmon/releases/download/v.0.0.2/washmon-.0.0.2-linux-amd64.tar.gz"
+      sha256 "ad056844dbb0e6b7d1f97d324cc8110ca6697754fa1a9c1480d2a8caf6f2ce79"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/washmon/releases/download/v0.0.1/washmon-0.0.1-linux-arm64.tar.gz"
-      sha256 "5d0d5bd77f4cb6f4788f55e915e9ba553ff7d42242ee176edea9817ef4f9a110"
+      url "https://github.com/cdzombak/washmon/releases/download/v.0.0.2/washmon-.0.0.2-linux-arm64.tar.gz"
+      sha256 "f3160d7727df86a66069d806354fb4bc03f5e444e2b34d15c6d58f557bdad09f"
     end
   end
 
@@ -39,6 +39,6 @@ class Washmon < Formula
   end
 
   test do
-    assert_match("0.0.1", shell_output("#{bin}/washmon -version"))
+    assert_match(".0.0.2", shell_output("#{bin}/washmon -version"))
   end
 end
