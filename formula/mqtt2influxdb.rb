@@ -5,15 +5,33 @@
 class Mqtt2influxdb < Formula
   desc "Opinionated and intentionally scope-limited mqtt to influxdb bridge"
   homepage "https://github.com/cdzombak/mqtt2influxdb"
-  url "https://github.com/cdzombak/mqtt2influxdb/archive/refs/tags/v0.0.5.tar.gz"
-  version "0.0.5"
-  sha256 "1ac4b23efbdbc472875591331a6e1c76dccc5020fcad47557dadf2d5977aaeba"
+  url "https://github.com/cdzombak/mqtt2influxdb/archive/refs/tags/v0.0.6.tar.gz"
+  version "0.0.6"
+  sha256 "77bc1be3f876d664ec5ce597e058a5866434da4972ab0fc00ab606421c1ad876"
   license "LGPL-3.0"
 
   on_macos do
+    on_intel do
+      url "https://github.com/cdzombak/mqtt2influxdb/releases/download/v0.0.6/mqtt2influxdb-0.0.6-darwin-amd64.tar.gz"
+      sha256 "8e3fa10159f8a2c9aaae5953cf25e81476e6909869fef844655287ab481aa034"
+    end
+
+    on_arm do
+      url "https://github.com/cdzombak/mqtt2influxdb/releases/download/v0.0.6/mqtt2influxdb-0.0.6-darwin-arm64.tar.gz"
+      sha256 "5c10c6ace7366a4c0210255cda21be4c70c80f4b7fb820071d01227d5de50017"
+    end
   end
 
   on_linux do
+    on_intel do
+      url "https://github.com/cdzombak/mqtt2influxdb/releases/download/v0.0.6/mqtt2influxdb-0.0.6-linux-amd64.tar.gz"
+      sha256 "44cac5dba6587fca88981f65a0367dc6fb44da13d7596e434d543a1cd0eb7d96"
+    end
+
+    on_arm do
+      url "https://github.com/cdzombak/mqtt2influxdb/releases/download/v0.0.6/mqtt2influxdb-0.0.6-linux-arm64.tar.gz"
+      sha256 "fe60132bbc2bf950261caf0e1f8129aab6d1b84bf5f7b1a00b16badc70eed5d8"
+    end
   end
 
   def install
@@ -21,6 +39,6 @@ class Mqtt2influxdb < Formula
   end
 
   test do
-    assert_match("0.0.5", shell_output("#{bin}/mqtt2influxdb -version"))
+    assert_match("0.0.6", shell_output("#{bin}/mqtt2influxdb -version"))
   end
 end
