@@ -5,32 +5,32 @@
 class NutInfluxConnector < Formula
   desc "Ship energy usage data and other ups stats from network-ups-tools to influxdb"
   homepage "https://github.com/cdzombak/nut_influx_connector"
-  url "https://github.com/cdzombak/nut_influx_connector/archive/refs/tags/v1.1.1.tar.gz"
-  version "1.1.1"
-  sha256 "8d45d896bf6332bd9e3872bd20590f857f09f0173a44897d18d0a0d1823ae25a"
+  url "https://github.com/cdzombak/nut_influx_connector/archive/refs/tags/v1.1.2.tar.gz"
+  version "1.1.2"
+  sha256 "a70353c0f265cf00201bba9420fc3f57edca3257d9f2d8574b5111b7891c5d04"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/nut_influx_connector/releases/download/v1.1.1/nut_influx_connector-1.1.1-darwin-amd64.tar.gz"
-      sha256 "1ee337c72c3a53564d2e5be3ba79b3664258ac0662c87dc99344c342f6b9548b"
+      url "https://github.com/cdzombak/nut_influx_connector/releases/download/v1.1.2/nut_influx_connector-1.1.2-darwin-amd64.tar.gz"
+      sha256 "1a046d05e4f4be7435e6b5178f78f88e290d015bd40e05aea75c8cd506297d37"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/nut_influx_connector/releases/download/v1.1.1/nut_influx_connector-1.1.1-darwin-arm64.tar.gz"
-      sha256 "2e6d07c2adf387df80dd8493a2c9cdc1e21d081c3d1e83dbc002b2deb4c15820"
+      url "https://github.com/cdzombak/nut_influx_connector/releases/download/v1.1.2/nut_influx_connector-1.1.2-darwin-arm64.tar.gz"
+      sha256 "1dfb4f62b5289dae6149727f55a8d11c7555330f95791f234ddb8e4c6360cd1b"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/nut_influx_connector/releases/download/v1.1.1/nut_influx_connector-1.1.1-linux-amd64.tar.gz"
-      sha256 "62ef9fb50bb16e032397b4d69754a26920a65e429773b6b6b0b6f817d2b1a81f"
+      url "https://github.com/cdzombak/nut_influx_connector/releases/download/v1.1.2/nut_influx_connector-1.1.2-linux-amd64.tar.gz"
+      sha256 "385bbc15ed8ba574c9ef73ca75e7ba3aa7d86c2bc7b6ea5016dc68a155c192cb"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/nut_influx_connector/releases/download/v1.1.1/nut_influx_connector-1.1.1-linux-arm64.tar.gz"
-      sha256 "49b7a4e1a14608fb8efb15a229a6a46a524a2a5dad1cdd6de98d3d1545d09c85"
+      url "https://github.com/cdzombak/nut_influx_connector/releases/download/v1.1.2/nut_influx_connector-1.1.2-linux-arm64.tar.gz"
+      sha256 "424c6d287453ae6a1b06eac436607ae49c2d6c1431321deb328af99cbe5402aa"
     end
   end
 
@@ -39,6 +39,6 @@ class NutInfluxConnector < Formula
   end
 
   test do
-    assert_match("1.1.1", shell_output("#{bin}/nut_influx_connector -version"))
+    assert_match("1.1.2", shell_output("#{bin}/nut_influx_connector -version"))
   end
 end
