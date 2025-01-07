@@ -5,32 +5,32 @@
 class Mqttwxenrich < Formula
   desc "Enrich mqtt messages from weather sensors with unit conversion and supplemental"
   homepage "https://github.com/cdzombak/mqttwxenrich"
-  url "https://github.com/cdzombak/mqttwxenrich/archive/refs/tags/v0.0.2.tar.gz"
-  version "0.0.2"
-  sha256 "bc38243c9de25d9102f7bf5e9c5d9da3c8458bdcfd7516d6dbfae1f260fcc0e4"
+  url "https://github.com/cdzombak/mqttwxenrich/archive/refs/tags/v0.0.3.tar.gz"
+  version "0.0.3"
+  sha256 "d70bdcc43b29f81f1cf9f2b42718804004dcbd9c004b0a1be3d4cab4c5654f6e"
   license "LGPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/mqttwxenrich/releases/download/v0.0.2/mqttwxenrich-0.0.2-darwin-amd64.tar.gz"
-      sha256 "0a877c5d0b9a70a8c67eae6d8ea7571f8aeb2d22cd84c198af9c28a2545dca2e"
+      url "https://github.com/cdzombak/mqttwxenrich/releases/download/v0.0.3/mqttwxenrich-0.0.3-darwin-amd64.tar.gz"
+      sha256 "d8951c29b5f0c0718765edc642c96c3b2e4aa53ccd87d7ee141be5689ef37432"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/mqttwxenrich/releases/download/v0.0.2/mqttwxenrich-0.0.2-darwin-arm64.tar.gz"
-      sha256 "0234b7b1d2b0d337affa858f4cc8d28c857fc2bb0846990a8bba174867aa6b20"
+      url "https://github.com/cdzombak/mqttwxenrich/releases/download/v0.0.3/mqttwxenrich-0.0.3-darwin-arm64.tar.gz"
+      sha256 "7b6dc261ecf169d24f39e25bdd723ad3085ac5a100020b2b262f008cd3572bc4"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/mqttwxenrich/releases/download/v0.0.2/mqttwxenrich-0.0.2-linux-amd64.tar.gz"
-      sha256 "cba3bb8c139c099963293a7d61a59e28ecb8287b854905d136ea676be1b9afc4"
+      url "https://github.com/cdzombak/mqttwxenrich/releases/download/v0.0.3/mqttwxenrich-0.0.3-linux-amd64.tar.gz"
+      sha256 "2d797d27407c10ca025d04b3921d476190f80a5d31aba76476d2fe5be7bb7638"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/mqttwxenrich/releases/download/v0.0.2/mqttwxenrich-0.0.2-linux-arm64.tar.gz"
-      sha256 "578d20f0acdee69bdb003131b1892617e7611e5a4d6fcb86653c69602cb164a1"
+      url "https://github.com/cdzombak/mqttwxenrich/releases/download/v0.0.3/mqttwxenrich-0.0.3-linux-arm64.tar.gz"
+      sha256 "d470214e9cb306b3f546aae795e88cd1f1e59efd3d1ca54b3d25e3318736cca2"
     end
   end
 
@@ -39,6 +39,6 @@ class Mqttwxenrich < Formula
   end
 
   test do
-    assert_match("0.0.2", shell_output("#{bin}/mqttwxenrich -version"))
+    assert_match("0.0.3", shell_output("#{bin}/mqttwxenrich -version"))
   end
 end
