@@ -5,32 +5,32 @@
 class Gallerygen < Formula
   desc "Generate a static html gallery from a directory tree of images"
   homepage "https://github.com/cdzombak/gallerygen"
-  url "https://github.com/cdzombak/gallerygen/archive/refs/tags/v1.0.2.tar.gz"
-  version "1.0.2"
-  sha256 "04fd4478a74f47e0d9750c15b6ad437bd845189a7f86b547d08379d63f378a6e"
+  url "https://github.com/cdzombak/gallerygen/archive/refs/tags/v1.0.3.tar.gz"
+  version "1.0.3"
+  sha256 "b38a4df5aef4fdb4db31a847cad9050842cd08a11b810237dcd45df1bd842d9a"
   license "LGPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/gallerygen/releases/download/v1.0.2/gallerygen-1.0.2-darwin-amd64.tar.gz"
-      sha256 "2e2c7c2b91e8be15d93aedea3d3fed55961e309ac4e2e9a4f915e1dd5d6e3cb4"
+      url "https://github.com/cdzombak/gallerygen/releases/download/v1.0.3/gallerygen-1.0.3-darwin-amd64.tar.gz"
+      sha256 "102ef2199a2f3941b304added282fb03b2f986fdc62de21ae1b1fef472e17dbf"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/gallerygen/releases/download/v1.0.2/gallerygen-1.0.2-darwin-arm64.tar.gz"
-      sha256 "1279ca2d11105bce1e66bbe1d46bf367f5e650b8b4fbbf4056cb5430dd959445"
+      url "https://github.com/cdzombak/gallerygen/releases/download/v1.0.3/gallerygen-1.0.3-darwin-arm64.tar.gz"
+      sha256 "03f796f2f1c93525fc351dac270ef82664a59b292592c43538823e88bc5c453d"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/gallerygen/releases/download/v1.0.2/gallerygen-1.0.2-linux-amd64.tar.gz"
-      sha256 "e837b96fcee138a66a1846c81d1e533bf4619e19666d7f99388457c748cb813e"
+      url "https://github.com/cdzombak/gallerygen/releases/download/v1.0.3/gallerygen-1.0.3-linux-amd64.tar.gz"
+      sha256 "c44d073383d1d50789fdfb23a16e731f42e30b2050fdb03fc3f9d5f0b15141c9"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/gallerygen/releases/download/v1.0.2/gallerygen-1.0.2-linux-arm64.tar.gz"
-      sha256 "db2f670d00504701cab86cb1d3d8eff7e6d5232d7b1890b10e3e810d71e25f40"
+      url "https://github.com/cdzombak/gallerygen/releases/download/v1.0.3/gallerygen-1.0.3-linux-arm64.tar.gz"
+      sha256 "37e0bc2196cb4a953ab0e13fcbee4a9a68002fd74a335cb816364cbc85347401"
     end
   end
 
@@ -39,6 +39,6 @@ class Gallerygen < Formula
   end
 
   test do
-    assert_match("1.0.2", shell_output("#{bin}/gallerygen -version"))
+    assert_match("1.0.3", shell_output("#{bin}/gallerygen -version"))
   end
 end
