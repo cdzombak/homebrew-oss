@@ -7,31 +7,13 @@ class Mqttwxenrich < Formula
   homepage "https://github.com/cdzombak/mqttwxenrich"
   url "https://github.com/cdzombak/mqttwxenrich/archive/refs/tags/v0.0.5.tar.gz"
   version "0.0.5"
-  sha256 "5d530f7d10f3577845aab8b93f463c4f4525cf037c57b9ac9d06b711ac3e19a1"
+  sha256 "25af840c023b4794f2c670b5296b5362bcc41af6c6c088f4fbe8b0ef1c4d7adf"
   license "LGPL-3.0"
 
   on_macos do
-    on_intel do
-      url "https://github.com/cdzombak/mqttwxenrich/releases/download/v0.0.5/mqttwxenrich-0.0.5-darwin-amd64.tar.gz"
-      sha256 "aba1d3b0505386e23a9c2f7bba1878a33cc52d4a3f4cb44f120900a843ae9cd3"
-    end
-
-    on_arm do
-      url "https://github.com/cdzombak/mqttwxenrich/releases/download/v0.0.5/mqttwxenrich-0.0.5-darwin-arm64.tar.gz"
-      sha256 "c60f022aad639bd32ecbab817ef60256d2349f7a379e2b79b59cafa9e0bb9db4"
-    end
   end
 
   on_linux do
-    on_intel do
-      url "https://github.com/cdzombak/mqttwxenrich/releases/download/v0.0.5/mqttwxenrich-0.0.5-linux-amd64.tar.gz"
-      sha256 "614505c983c43036579b035353e92d31989bb18721e004f5c970069140710659"
-    end
-
-    on_arm do
-      url "https://github.com/cdzombak/mqttwxenrich/releases/download/v0.0.5/mqttwxenrich-0.0.5-linux-arm64.tar.gz"
-      sha256 "3b0891102758e12369f2796eafdf2e9b21dccd3caacc14886886e4d36341bc1a"
-    end
   end
 
   def install
