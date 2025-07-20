@@ -5,32 +5,32 @@
 class FlickrRss < Formula
   desc "Generate an rss feed of a flickr photostream or your flickr friends &amp; family fee"
   homepage "https://github.com/cdzombak/flickr-rss"
-  url "https://github.com/cdzombak/flickr-rss/archive/refs/tags/v1.0.1.tar.gz"
-  version "1.0.1"
-  sha256 "dec702148e2f290597d079404d0c1aead6841810a1c2bbb4d6e7d4372b075636"
+  url "https://github.com/cdzombak/flickr-rss/archive/refs/tags/v1.0.2.tar.gz"
+  version "1.0.2"
+  sha256 "ed6781df6fe50f990cc6c4012b375141de3233fa257f4de7ee98b092090ec7be"
   license "LGPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/flickr-rss/releases/download/v1.0.1/flickr-rss-1.0.1-darwin-amd64.tar.gz"
-      sha256 "f9f99855259363a669cc34368e1689686450a0d73adf92886582920cf2cd0b28"
+      url "https://github.com/cdzombak/flickr-rss/releases/download/v1.0.2/flickr-rss-1.0.2-darwin-amd64.tar.gz"
+      sha256 "28e4d963822dbe02abd14a1414656e8a04b4d2fd175c5ae433ca7353ae997fc1"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/flickr-rss/releases/download/v1.0.1/flickr-rss-1.0.1-darwin-arm64.tar.gz"
-      sha256 "df8edd0cb6f1dba9ca8b6bab46d6b845455303c311b14dab6d08188ca61c2ce2"
+      url "https://github.com/cdzombak/flickr-rss/releases/download/v1.0.2/flickr-rss-1.0.2-darwin-arm64.tar.gz"
+      sha256 "53c8ddf891f31e2f25e0fcb55e2ea98a9fa5f81e31d62d8ca7282c867f85246b"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/flickr-rss/releases/download/v1.0.1/flickr-rss-1.0.1-linux-amd64.tar.gz"
-      sha256 "fe455a1a50bf63c3be671f1e4c3f4ba8cd1edd290680081252a783d1b68e0a76"
+      url "https://github.com/cdzombak/flickr-rss/releases/download/v1.0.2/flickr-rss-1.0.2-linux-amd64.tar.gz"
+      sha256 "e174db469d5c7ab4fa0bb4b70f28553dd0dba8cadfd2aa9f7917401832a02d71"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/flickr-rss/releases/download/v1.0.1/flickr-rss-1.0.1-linux-arm64.tar.gz"
-      sha256 "2de12dc81bfd23e400bd2f7491fd7989baf7145d4abd27ea69bd1e39e38533ef"
+      url "https://github.com/cdzombak/flickr-rss/releases/download/v1.0.2/flickr-rss-1.0.2-linux-arm64.tar.gz"
+      sha256 "b9405f6d38d92298e4b86b8cfa9e6f4ce01d33dbffc1c00b18d39a5ec402e92d"
     end
   end
 
@@ -39,6 +39,6 @@ class FlickrRss < Formula
   end
 
   test do
-    assert_match("1.0.1", shell_output("#{bin}/flickr-rss version"))
+    assert_match("1.0.2", shell_output("#{bin}/flickr-rss version"))
   end
 end
