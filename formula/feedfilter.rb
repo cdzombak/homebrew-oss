@@ -5,9 +5,9 @@
 class Feedfilter < Formula
   desc "Rss feed filtering tool"
   homepage "https://github.com/cdzombak/feedfilter"
-  url "https://github.com/cdzombak/feedfilter/archive/refs/tags/v1.0.0.tar.gz"
-  version "1.0.0"
-  sha256 "fa4adc6059c6464c3125f3c1d986637f2aa36ba95c5fd44c30abbd52b3c52941"
+  url "https://github.com/cdzombak/feedfilter/archive/refs/tags/v1.1.0.tar.gz"
+  version "1.1.0"
+  sha256 "1f3fc8a466f638ab4c4f01998ec0dc1befb0b1a01a69858dd4657b2703a70bb4"
   license "GPL-3.0"
 
   on_macos do
@@ -15,13 +15,13 @@ class Feedfilter < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/feedfilter/releases/download/v1.0.0/feedfilter-1.0.0-linux-amd64.tar.gz"
-      sha256 "43f5fb26d2e6a7313353a4ed93f42bbbd5e14355885d3ffe366dc4c3201c8fbf"
+      url "https://github.com/cdzombak/feedfilter/releases/download/v1.1.0/feedfilter-1.1.0-linux-amd64.tar.gz"
+      sha256 "d53ea94d47bbc3829eb7f537ccda3e7e2e3c4ad3ca26931a853a2c823eed148f"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/feedfilter/releases/download/v1.0.0/feedfilter-1.0.0-linux-arm64.tar.gz"
-      sha256 "8f9dfddfb20685b71f634841a93843cda7855080e36864ab592a7d57dd51381b"
+      url "https://github.com/cdzombak/feedfilter/releases/download/v1.1.0/feedfilter-1.1.0-linux-arm64.tar.gz"
+      sha256 "732f0279bc6c2a0166ab073bd572c3193d6b09e1f5c0c11ac3ae555289b17c26"
     end
   end
 
@@ -30,6 +30,6 @@ class Feedfilter < Formula
   end
 
   test do
-    assert_match("1.0.0", shell_output("#{bin}/feedfilter version"))
+    assert_match("1.1.0", shell_output("#{bin}/feedfilter version"))
   end
 end
