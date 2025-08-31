@@ -5,32 +5,32 @@
 class LycheeAiOrganizer < Formula
   desc "Use local llms to organize your unsorted photos in lychee"
   homepage "https://github.com/cdzombak/lychee-ai-organizer"
-  url "https://github.com/cdzombak/lychee-ai-organizer/archive/refs/tags/v1.0.0.tar.gz"
-  version "1.0.0"
-  sha256 "cf67088a6ee20b5a82ee4b7091339ffcd9f5db2e61c8e4beac9980e5379bce23"
+  url "https://github.com/cdzombak/lychee-ai-organizer/archive/refs/tags/v1.0.1.tar.gz"
+  version "1.0.1"
+  sha256 "108ea96270c273a0b3365fa0a38bfc5e1b510a9080ddd0db9e22e5985f7317d1"
   license "GPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/lychee-ai-organizer/releases/download/v1.0.0/lychee-ai-organizer-1.0.0-darwin-amd64.tar.gz"
-      sha256 "a23f1348aa505010269722c03e47517cb9e3c50b1363d95fa1f99aa5e4b1edc9"
+      url "https://github.com/cdzombak/lychee-ai-organizer/releases/download/v1.0.1/lychee-ai-organizer-1.0.1-darwin-amd64.tar.gz"
+      sha256 "c0db3f8cceb88bf094eb1eb6125eb3bf6667a561ccbedccc1ce3127e922b8ab9"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/lychee-ai-organizer/releases/download/v1.0.0/lychee-ai-organizer-1.0.0-darwin-arm64.tar.gz"
-      sha256 "abc47e2a6bf3da4f3a07ebfe69d9ecbbe8e9611ca08c4a65ce233734daad3325"
+      url "https://github.com/cdzombak/lychee-ai-organizer/releases/download/v1.0.1/lychee-ai-organizer-1.0.1-darwin-arm64.tar.gz"
+      sha256 "b4e5eabf1692fbf6371c3be15f1f850f105160860d97abff64ea45492fc3f466"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/lychee-ai-organizer/releases/download/v1.0.0/lychee-ai-organizer-1.0.0-linux-amd64.tar.gz"
-      sha256 "0ee7f3630ef4afc40a927d82eedb6fd0d87ee2cd452c4968d8a8cf7cef1cb655"
+      url "https://github.com/cdzombak/lychee-ai-organizer/releases/download/v1.0.1/lychee-ai-organizer-1.0.1-linux-amd64.tar.gz"
+      sha256 "522d9579837604631e571f410c419366fd6cdd9a5c7440e48c0b074b3cc14da9"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/lychee-ai-organizer/releases/download/v1.0.0/lychee-ai-organizer-1.0.0-linux-arm64.tar.gz"
-      sha256 "b415dca7b4a60aa39c9d5199594fa23cb087011123523a848dc7e026b6a5ef80"
+      url "https://github.com/cdzombak/lychee-ai-organizer/releases/download/v1.0.1/lychee-ai-organizer-1.0.1-linux-arm64.tar.gz"
+      sha256 "14892124aea561cb90d655abb133944ef48dc5fc68ada26c0ea4cbc3369e046d"
     end
   end
 
@@ -39,6 +39,6 @@ class LycheeAiOrganizer < Formula
   end
 
   test do
-    assert_match("1.0.0", shell_output("#{bin}/lychee-ai-organizer -version"))
+    assert_match("1.0.1", shell_output("#{bin}/lychee-ai-organizer -version"))
   end
 end
