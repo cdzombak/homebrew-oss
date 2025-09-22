@@ -31,8 +31,10 @@ jobs:
           set -euo pipefail
 
           # Generate new table content
-          echo "| Project | Description | Install |"
-          echo "| --- | --- | --- |"
+          {
+          echo ""
+          echo "| Software | Description | Install Command |"
+          echo "| -------- | ----------- | -----------------|"
 
           # Parse all formula files and extract info
           for formula in Formula/*.rb; do
@@ -68,7 +70,9 @@ jobs:
 
               echo "| $project_link | $desc | \`brew install $formula_name\` |"
             fi
-          done | sort -f > /tmp/new_table.md
+          done | sort -f
+          echo ""
+          } > /tmp/new_table.md
 
       - name: Update README.md
         run: |
