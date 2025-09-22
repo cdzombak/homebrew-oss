@@ -46,5 +46,4 @@ Or `brew tap cdzombak/oss` and then `brew install <formula>`.
 | [wxcal](https://github.com/cdzombak/wxcal) | Generate an ical feed from the weathergov forecast api | `brew install wxcal` |
 | [xtool](https://github.com/cdzombak/xtool) | Photography workflow helper, mainly focused on exif operations | `brew install xtool` |
 
-
 <!-- project_table_end -->
