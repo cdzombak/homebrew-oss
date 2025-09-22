@@ -5,32 +5,32 @@
 class GitAc < Formula
   desc "Git autocommit: commit staged changes with llm-written commit messages"
   homepage "https://github.com/cdzombak/git-ac"
-  url "https://github.com/cdzombak/git-ac/archive/refs/tags/v1.0.1.tar.gz"
-  version "1.0.1"
-  sha256 "843bbc3dca95308a7e89d661e9777c699160727701458a68b55a366af3935ec9"
+  url "https://github.com/cdzombak/git-ac/archive/refs/tags/v1.0.2.tar.gz"
+  version "1.0.2"
+  sha256 "4ad17f82069dbdc3b3e586694be79a4b1cff95542c000e31a16c84aacde1e795"
   license "GPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/git-ac/releases/download/v1.0.1/git-ac-1.0.1-darwin-amd64.tar.gz"
-      sha256 "e4473e41ee7755a9861aa2fbd11bc0bf5dc71534f7f9ed367ddf6cb8f971dfa3"
+      url "https://github.com/cdzombak/git-ac/releases/download/v1.0.2/git-ac-1.0.2-darwin-amd64.tar.gz"
+      sha256 "3d788dfe89cbc422025c6b62aba5de9ce2a054851a66642a7ce525714f80f20c"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/git-ac/releases/download/v1.0.1/git-ac-1.0.1-darwin-arm64.tar.gz"
-      sha256 "afc0d164fd3ff96e2a96180c82f0b477e193b6f2e8e9562b25b69efc22377c7b"
+      url "https://github.com/cdzombak/git-ac/releases/download/v1.0.2/git-ac-1.0.2-darwin-arm64.tar.gz"
+      sha256 "e8521589754fb2d08b4e0e7da5a2da1ade4f6f346f62ac7322362a2fc57cff6c"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/git-ac/releases/download/v1.0.1/git-ac-1.0.1-linux-amd64.tar.gz"
-      sha256 "42ce82742f5c7d737f629d1e858f97f2033dc12e06e4c63d6ac2cc14748507ba"
+      url "https://github.com/cdzombak/git-ac/releases/download/v1.0.2/git-ac-1.0.2-linux-amd64.tar.gz"
+      sha256 "ee3a0646824b2e99531bb5b97eedb6dccfde2085eccc69dcbf95ccfb656037a6"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/git-ac/releases/download/v1.0.1/git-ac-1.0.1-linux-arm64.tar.gz"
-      sha256 "ae87e3263f89994d94f5222ce0bb4fe27162c09a63a21beb1e5cb6229cc7c498"
+      url "https://github.com/cdzombak/git-ac/releases/download/v1.0.2/git-ac-1.0.2-linux-arm64.tar.gz"
+      sha256 "ead6809517194e482b95ccdf471b6a62133f9ffa0ce671f1ba6b0042dd077dc0"
     end
   end
 
@@ -39,6 +39,6 @@ class GitAc < Formula
   end
 
   test do
-    assert_match("1.0.1", shell_output("#{bin}/git-ac -version"))
+    assert_match("1.0.2", shell_output("#{bin}/git-ac -version"))
   end
 end
