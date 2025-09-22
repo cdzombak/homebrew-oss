@@ -1,0 +1,110 @@
+---
+name: Update README
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "Formula/*.rb"
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+
+      - name: Update README table
+        run: |
+          #!/bin/bash
+          set -euo pipefail
+
+          # Generate new table content
+          echo "| Project | Description | Install |"
+          echo "| --- | --- | --- |"
+
+          # Parse all formula files and extract info
+          for formula in Formula/*.rb; do
+            if [[ -f "$formula" ]]; then
+              # Extract formula name from filename
+              formula_name=$(basename "$formula" .rb)
+
+              # Extract description and homepage using Ruby parsing
+              desc=$(ruby -e "
+                content = File.read('$formula')
+                if content =~ /desc\s+[\"']([^\"']*)[\"']/
+                  puts \$1
+                else
+                  puts 'No description available'
+                end
+              ")
+
+              homepage=$(ruby -e "
+                content = File.read('$formula')
+                if content =~ /homepage\s+[\"']([^\"']*)[\"']/
+                  puts \$1
+                else
+                  puts ''
+                end
+              ")
+
+              # Generate table row
+              if [[ -n "$homepage" ]]; then
+                project_link="[$formula_name]($homepage)"
+              else
+                project_link="$formula_name"
+              fi
+
+              echo "| $project_link | $desc | \`brew install $formula_name\` |"
+            fi
+          done | sort -f > /tmp/new_table.md
+
+      - name: Update README.md
+        run: |
+          #!/bin/bash
+          set -euo pipefail
+
+          # Create new README with updated table
+          awk '
+            /<!-- project_table_start -->/ {
+              print $0
+              system("cat /tmp/new_table.md")
+              skip = 1
+              next
+            }
+            /<!-- project_table_end -->/ {
+              skip = 0
+            }
+            !skip
+          ' README.md > README_new.md
+
+          mv README_new.md README.md
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet README.md; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "chore: update README.md software table
+
+          🤖 Generated with GitHub Actions"
+          git push
