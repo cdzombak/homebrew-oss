@@ -12,6 +12,7 @@ Or `brew tap cdzombak/oss` and then `brew install <formula>`.
 
 | Software | Description | Install Command |
 | -------- | ----------- | -----------------|
+| [aclaude](https://github.com/cdzombak/aclaude) | Claude Code launcher for alternate models | `brew install aclaude` |
 | [cidrtool](https://github.com/cdzombak/cidrtool) | Simple command-line tool for manipulating CIDR blocks | `brew install cidrtool` |
 | [dirshard](https://github.com/cdzombak/dirshard) | Produce sharded path fragments from a filename | `brew install dirshard` |
 | [energybridge_to_influxdb](https://github.com/cdzombak/energybridge_to_influxdb) | Pull electricity usage readings from an energy bridge via mqtt and ship them to | `brew install energybridge_to_influxdb` |
