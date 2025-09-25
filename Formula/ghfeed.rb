@@ -5,32 +5,32 @@
 class Ghfeed < Formula
   desc "Github activity feed consolidator"
   homepage "https://github.com/cdzombak/ghfeed"
-  url "https://github.com/cdzombak/ghfeed/archive/refs/tags/v1.4.2.tar.gz"
-  version "1.4.2"
-  sha256 "dd4414c08bd7f2feaf7206c98a2d47a51d3277bbb04cda11d7822cfa5fd14582"
+  url "https://github.com/cdzombak/ghfeed/archive/refs/tags/v1.4.3.tar.gz"
+  version "1.4.3"
+  sha256 "77655f29f8fa0e033474c6110f481cff1a32d51c39d6cd53a2758167398171f4"
   license "GPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/ghfeed/releases/download/v1.4.2/ghfeed-1.4.2-darwin-amd64.tar.gz"
-      sha256 "53dcdf7c6a617faa72da1a906b3355397c91f354374fbdf9b27928c5d4baeb3c"
+      url "https://github.com/cdzombak/ghfeed/releases/download/v1.4.3/ghfeed-1.4.3-darwin-amd64.tar.gz"
+      sha256 "898b7523000e578b35214cc21364091f71c1e489c4b4fe89f0c5fcd17e41bd89"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/ghfeed/releases/download/v1.4.2/ghfeed-1.4.2-darwin-arm64.tar.gz"
-      sha256 "00553232d4e6b1054cc094b806135d63044e01b26f6199d988357534c3379d87"
+      url "https://github.com/cdzombak/ghfeed/releases/download/v1.4.3/ghfeed-1.4.3-darwin-arm64.tar.gz"
+      sha256 "223dcd2c16b1f2b13e7aa4afa9719b598fa7043e5e5668d580afadb04496167a"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/ghfeed/releases/download/v1.4.2/ghfeed-1.4.2-linux-amd64.tar.gz"
-      sha256 "89456eae4bd87fb2ad70b42060534519916a0d9338a3e58b02f2e0ad97dfc551"
+      url "https://github.com/cdzombak/ghfeed/releases/download/v1.4.3/ghfeed-1.4.3-linux-amd64.tar.gz"
+      sha256 "25f677e11f653ae316ff30b6f169a548fddf7a779b8070d594132b57f671a712"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/ghfeed/releases/download/v1.4.2/ghfeed-1.4.2-linux-arm64.tar.gz"
-      sha256 "943f1987123289b5ad1bcb11b07d7692065075683e7a9f3feb4f385f2c9e6b0b"
+      url "https://github.com/cdzombak/ghfeed/releases/download/v1.4.3/ghfeed-1.4.3-linux-arm64.tar.gz"
+      sha256 "8cc0460d19f256f9a39cbff49b097fb1b704573a8a79c6ec1d7bcb7d8b9b2c9e"
     end
   end
 
@@ -39,6 +39,6 @@ class Ghfeed < Formula
   end
 
   test do
-    assert_match("1.4.2", shell_output("#{bin}/ghfeed -version"))
+    assert_match("1.4.3", shell_output("#{bin}/ghfeed -version"))
   end
 end
