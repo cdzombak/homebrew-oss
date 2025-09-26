@@ -5,32 +5,32 @@
 class Eztag < Formula
   desc "Quickly &amp; easily create tags in your github repositories"
   homepage "https://github.com/cdzombak/eztag"
-  url "https://github.com/cdzombak/eztag/archive/refs/tags/v0.0.1.tar.gz"
-  version "0.0.1"
-  sha256 "2373ecf3a5d84eda7f8c3d9bae235f0b1ced7031776eadc2955f052eb2a19440"
+  url "https://github.com/cdzombak/eztag/archive/refs/tags/v0.0.2.tar.gz"
+  version "0.0.2"
+  sha256 "bbd7206199a155ca23debc9481e2fbb5dd79ee5cfdfde0272e25ce3afc31c307"
   license "GPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/eztag/releases/download/v0.0.1/eztag-0.0.1-darwin-amd64.tar.gz"
-      sha256 "e3bfa8c0ea2e2e81ee85318209c8e487efd7efa575f6364f4e2fffabb6951f45"
+      url "https://github.com/cdzombak/eztag/releases/download/v0.0.2/eztag-0.0.2-darwin-amd64.tar.gz"
+      sha256 "a9316d0afa7762b0bfa0504293e30b7353cb34d0ffdc655a19c089e47b3d9104"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/eztag/releases/download/v0.0.1/eztag-0.0.1-darwin-arm64.tar.gz"
-      sha256 "c652dcecc2f2fd673d49551673e3a5afa40ceaf8a45e1fbc2defa95590662e6d"
+      url "https://github.com/cdzombak/eztag/releases/download/v0.0.2/eztag-0.0.2-darwin-arm64.tar.gz"
+      sha256 "9e2998205128750145b98cdc17fb948637157ca750721e5bd9549dc3dadbd5ee"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/eztag/releases/download/v0.0.1/eztag-0.0.1-linux-amd64.tar.gz"
-      sha256 "3494bbece369f4f9595511088f503e4569ec1c0757cfe4fdd55cc37fa549dda5"
+      url "https://github.com/cdzombak/eztag/releases/download/v0.0.2/eztag-0.0.2-linux-amd64.tar.gz"
+      sha256 "d2a48f27034ad5c82c5d8efe752de4c5c0bc46f6339c8237bf70f35fe984e59f"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/eztag/releases/download/v0.0.1/eztag-0.0.1-linux-arm64.tar.gz"
-      sha256 "67b7b91ba439b427f1248cbf29a3f5500fc1e66d53df4965b4eda4b3559264e2"
+      url "https://github.com/cdzombak/eztag/releases/download/v0.0.2/eztag-0.0.2-linux-arm64.tar.gz"
+      sha256 "5f2f7778c929d104652500d7939972d8cf6b60bf121987bb34767bbcca14b307"
     end
   end
 
@@ -39,6 +39,6 @@ class Eztag < Formula
   end
 
   test do
-    assert_match("0.0.1", shell_output("#{bin}/eztag -version"))
+    assert_match("0.0.2", shell_output("#{bin}/eztag -version"))
   end
 end
