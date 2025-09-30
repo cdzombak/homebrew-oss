@@ -5,32 +5,32 @@
 class Trailcamai < Formula
   desc "Ai-powered trail camera image and video organizer"
   homepage "https://github.com/cdzombak/trailcamai"
-  url "https://github.com/cdzombak/trailcamai/archive/refs/tags/v0.0.2.tar.gz"
-  version "0.0.2"
-  sha256 "0c88faef530e18869c174f97915d32de32697ac5b49cd6f6b9cdd1f00b8d2862"
+  url "https://github.com/cdzombak/trailcamai/archive/refs/tags/v1.0.0.tar.gz"
+  version "1.0.0"
+  sha256 "b9a9ad5b5e909bbaeb0e9b1a2a62221c568b6507a380c50509e538897e1d827e"
   license "GPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/trailcamai/releases/download/v0.0.2/trailcamai-0.0.2-darwin-amd64.tar.gz"
-      sha256 "2f45c8f64099eed6627cc71c513584deddabba8260ce1f7fe2b9f991f5cb157a"
+      url "https://github.com/cdzombak/trailcamai/releases/download/v1.0.0/trailcamai-1.0.0-darwin-amd64.tar.gz"
+      sha256 "188254264c759ae03bed8e15fd972fddaa58ae3772a67bd57870c60895e32255"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/trailcamai/releases/download/v0.0.2/trailcamai-0.0.2-darwin-arm64.tar.gz"
-      sha256 "73ef143da39bde4ea7d70a1190296b01cb8e41cc35afd59b59a089693ca53296"
+      url "https://github.com/cdzombak/trailcamai/releases/download/v1.0.0/trailcamai-1.0.0-darwin-arm64.tar.gz"
+      sha256 "84b4a28a5294ff2c6e73d08c837b3a0c7a61464edfa29d801752036da288768b"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/trailcamai/releases/download/v0.0.2/trailcamai-0.0.2-linux-amd64.tar.gz"
-      sha256 "84766901289b8b33df58ab6f5a7297ca1ec3076737ce506e2b1adb1ca981ac4d"
+      url "https://github.com/cdzombak/trailcamai/releases/download/v1.0.0/trailcamai-1.0.0-linux-amd64.tar.gz"
+      sha256 "91037373eb97b8cc4f1571a3ba106c5f46741d3f55c3a5e5df149a715fa767bb"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/trailcamai/releases/download/v0.0.2/trailcamai-0.0.2-linux-arm64.tar.gz"
-      sha256 "857b84c91a23323e6e683575415efe82cb924e12d3d0c3c2d2eb229e812f3eb2"
+      url "https://github.com/cdzombak/trailcamai/releases/download/v1.0.0/trailcamai-1.0.0-linux-arm64.tar.gz"
+      sha256 "0d97edb345369ed8ddb7ccad4ef76853e440530349d6e7d4ea987c7242a86145"
     end
   end
 
@@ -39,6 +39,6 @@ class Trailcamai < Formula
   end
 
   test do
-    assert_match("0.0.2", shell_output("#{bin}/trailcamai -version"))
+    assert_match("1.0.0", shell_output("#{bin}/trailcamai -version"))
   end
 end
