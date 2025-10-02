@@ -5,32 +5,32 @@
 class Pdate < Formula
   desc "Date/time parsing on the cli"
   homepage "https://github.com/cdzombak/pdate"
-  url "https://github.com/cdzombak/pdate/archive/refs/tags/v1.1.0.tar.gz"
-  version "1.1.0"
-  sha256 "7c6f6fecc6166e1808b2b6c01f532a690de3c88222bc6430ff54799ca22216ee"
+  url "https://github.com/cdzombak/pdate/archive/refs/tags/v1.1.1.tar.gz"
+  version "1.1.1"
+  sha256 "89523bd5292dba7b0bd7db241d4315c5e7f37cb4e831c19de0bbd1be613f5da7"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/pdate/releases/download/v1.1.0/pdate-1.1.0-darwin-amd64.tar.gz"
-      sha256 "7cbfb1cf88da3002fe6702b0db87810dd50d8a684c70e8f777f961084e0bcc28"
+      url "https://github.com/cdzombak/pdate/releases/download/v1.1.1/pdate-1.1.1-darwin-amd64.tar.gz"
+      sha256 "6ffe867c3498c317528e39b8ebdc59f847bc95f9c8cddfc0b7a745fe5be047f0"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/pdate/releases/download/v1.1.0/pdate-1.1.0-darwin-arm64.tar.gz"
-      sha256 "5cf8a5d09209bae2b8ec7c94ddb4028e6a21d78f0ee72920a35ebe4eb78c32ad"
+      url "https://github.com/cdzombak/pdate/releases/download/v1.1.1/pdate-1.1.1-darwin-arm64.tar.gz"
+      sha256 "c784a9c1f3e670cb301036a59e233945334723012a65a982effbcbe4e8c9213f"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/pdate/releases/download/v1.1.0/pdate-1.1.0-linux-amd64.tar.gz"
-      sha256 "76224c5537233f3387cc308b9cee0c5933927151d239dfc36ca9368add15585b"
+      url "https://github.com/cdzombak/pdate/releases/download/v1.1.1/pdate-1.1.1-linux-amd64.tar.gz"
+      sha256 "edc37eb037dc0873e4ac2ad440f09958e531f1617cb985a04b60c6bc6e2f4c2a"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/pdate/releases/download/v1.1.0/pdate-1.1.0-linux-arm64.tar.gz"
-      sha256 "305e84f626649c9c01f0de78f9fdecfcb7e994d47a9a8ef084a66d29ccf867e9"
+      url "https://github.com/cdzombak/pdate/releases/download/v1.1.1/pdate-1.1.1-linux-arm64.tar.gz"
+      sha256 "c9416c5c09196807bc698353e56c34312db0f4fb0169635bb771fba99a6361b6"
     end
   end
 
@@ -39,6 +39,6 @@ class Pdate < Formula
   end
 
   test do
-    assert_match("1.1.0", shell_output("#{bin}/pdate -version"))
+    assert_match("1.1.1", shell_output("#{bin}/pdate -version"))
   end
 end
