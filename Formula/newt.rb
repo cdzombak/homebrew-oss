@@ -5,8 +5,8 @@
 class Newt < Formula
   desc "Git worktree manager"
   homepage "https://github.com/cdzombak/newt"
-  url "https://github.com/cdzombak/newt/releases/download/v0.0.4/newt-0.0.4-all.tar.gz"
-  sha256 "963465431f8021a2023eaaefd2aeb7cda763cc03d133b62d436f23547c240135"
+  url "https://github.com/cdzombak/newt/releases/download/v0.0.5/newt-0.0.5-all.tar.gz"
+  sha256 "99c170f4413cbf989ece19e8e7257d0de6a229b47baf5223e4a39678d4ab2b4c"
   license "LGPL-3.0"
 
   def install
@@ -16,6 +16,6 @@ class Newt < Formula
   end
 
   test do
-    assert_match("0.0.4", shell_output("#{bin}/newt --version"))
+    assert_match("0.0.5", shell_output("#{bin}/newt --version"))
   end
 end
