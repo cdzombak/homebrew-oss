@@ -37,6 +37,7 @@ Or `brew tap cdzombak/oss` and then `brew install <formula>`.
 | [mqtt2influxdb](https://github.com/cdzombak/mqtt2influxdb) | Opinionated and intentionally scope-limited mqtt to influxdb bridge | `brew install mqtt2influxdb` |
 | [mqtt2ntfy](https://github.com/cdzombak/mqtt2ntfy) | Mqtt to ntfy bridge | `brew install mqtt2ntfy` |
 | [mqttwxenrich](https://github.com/cdzombak/mqttwxenrich) | Enrich mqtt messages from weather sensors with unit conversion and supplemental | `brew install mqttwxenrich` |
+| [newt](https://github.com/cdzombak/newt) | Git worktree manager | `brew install newt` |
 | [nut_influx_connector](https://github.com/cdzombak/nut_influx_connector) | Ship energy usage data &amp; ups stats from network-ups-tools to influxdb/mqtt | `brew install nut_influx_connector` |
 | [openweather-influxdb-connector](https://github.com/cdzombak/openweather-influxdb-connector) | Write current weather conditions from openweathermap to influxdb | `brew install openweather-influxdb-connector` |
 | [pdate](https://github.com/cdzombak/pdate) | Date/time parsing on the cli | `brew install pdate` |
