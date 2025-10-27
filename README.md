@@ -21,6 +21,7 @@ Or `brew tap cdzombak/oss` and then `brew install <formula>`.
 | [feedfilter](https://github.com/cdzombak/feedfilter) | Rss feed filtering tool | `brew install feedfilter` |
 | [flickr-rss](https://github.com/cdzombak/flickr-rss) | Generate an rss feed of a flickr photostream or your friends & family feed | `brew install flickr-rss` |
 | [gallerygen](https://github.com/cdzombak/gallerygen) | Generate a static html gallery from a directory tree of images | `brew install gallerygen` |
+| [gha-secrets-setup](https://github.com/cdzombak/gha-secrets-setup) | GitHub Actions secrets setup tool | `brew install gha-secrets-setup` |
 | [ghfeed](https://github.com/cdzombak/ghfeed) | Github activity feed consolidator | `brew install ghfeed` |
 | [git-ac](https://github.com/cdzombak/git-ac) | Git autocommit: commit staged changes with llm-written commit messages | `brew install git-ac` |
 | [gmail-cleaner](https://github.com/cdzombak/gmail-cleaner) | Delete old messages in a chosen label from your gmail account | `brew install gmail-cleaner` |
