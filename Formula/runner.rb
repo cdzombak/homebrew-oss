@@ -5,32 +5,32 @@
 class Runner < Formula
   desc "Lightweight wrapper for better cron jobs and containers"
   homepage "https://github.com/cdzombak/runner"
-  url "https://github.com/cdzombak/runner/archive/refs/tags/v2.10.0.tar.gz"
-  version "2.10.0"
-  sha256 "9c93a95eaf6b466beab4e22bbdedaf865ba239ed31ef396c76d566e7202f2e84"
+  url "https://github.com/cdzombak/runner/archive/refs/tags/v2.11.0.tar.gz"
+  version "2.11.0"
+  sha256 "a5b9500e56e62a28a45f278fa7171399ae6836c1b3119cd20258a800e78a3028"
   license "LGPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/runner/releases/download/v2.10.0/runner-2.10.0-darwin-amd64.tar.gz"
-      sha256 "96747fdc59568fb159372d46cc1c64c3be9b62469c65b0ea20e1b9bc62036cc3"
+      url "https://github.com/cdzombak/runner/releases/download/v2.11.0/runner-2.11.0-darwin-amd64.tar.gz"
+      sha256 "405b7f425c7db3d855b5127a2e67113efe0d249b93bf20d0dce361fa8f55bac2"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/runner/releases/download/v2.10.0/runner-2.10.0-darwin-arm64.tar.gz"
-      sha256 "e4073ea9a42416366cc497ab4814caf5f3be8a8875d3d8fab2874e54b5f80c35"
+      url "https://github.com/cdzombak/runner/releases/download/v2.11.0/runner-2.11.0-darwin-arm64.tar.gz"
+      sha256 "8ae3e5c1b336fc678e884380c87cf3f9030eaeb52ef33f0c0662a66dc7573001"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/runner/releases/download/v2.10.0/runner-2.10.0-linux-amd64.tar.gz"
-      sha256 "767a57fcd93937fd94e68e8cc9cd89fe5a0f632615c5ea295c3aa2902d06f7b7"
+      url "https://github.com/cdzombak/runner/releases/download/v2.11.0/runner-2.11.0-linux-amd64.tar.gz"
+      sha256 "2acf602f42e7506a140d18a3e19aa84cafa482cae3fe0081e7e966097ab24cd0"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/runner/releases/download/v2.10.0/runner-2.10.0-linux-arm64.tar.gz"
-      sha256 "8f6bd742a362d9b28cdd6c34dafc1dd04d7539a24c11846e035379e11006d7cf"
+      url "https://github.com/cdzombak/runner/releases/download/v2.11.0/runner-2.11.0-linux-arm64.tar.gz"
+      sha256 "f1fed2d0dbd92a57f767607e764e792a04351e355bf47a2eb41814bbb0272061"
     end
   end
 
@@ -39,6 +39,6 @@ class Runner < Formula
   end
 
   test do
-    assert_match("2.10.0", shell_output("#{bin}/runner -version"))
+    assert_match("2.11.0", shell_output("#{bin}/runner -version"))
   end
 end
