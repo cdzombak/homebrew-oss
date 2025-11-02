@@ -13,24 +13,24 @@ class Runner < Formula
   on_macos do
     on_intel do
       url "https://github.com/cdzombak/runner/releases/download/v2.11.0/runner-2.11.0-darwin-amd64.tar.gz"
-      sha256 "405b7f425c7db3d855b5127a2e67113efe0d249b93bf20d0dce361fa8f55bac2"
+      sha256 "af39c3870b4fc170379b91ac58fc7b9fcded19c74c0188419beba1cf282c7f56"
     end
 
     on_arm do
       url "https://github.com/cdzombak/runner/releases/download/v2.11.0/runner-2.11.0-darwin-arm64.tar.gz"
-      sha256 "8ae3e5c1b336fc678e884380c87cf3f9030eaeb52ef33f0c0662a66dc7573001"
+      sha256 "94d6e178be634ba51765a30459a9cc5b353b2651cfc366bb5700ece5438b186e"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/cdzombak/runner/releases/download/v2.11.0/runner-2.11.0-linux-amd64.tar.gz"
-      sha256 "2acf602f42e7506a140d18a3e19aa84cafa482cae3fe0081e7e966097ab24cd0"
+      sha256 "9a934352683179e11785ac6794f3ef5d1df5be76b1562d25aa435e02dac1e138"
     end
 
     on_arm do
       url "https://github.com/cdzombak/runner/releases/download/v2.11.0/runner-2.11.0-linux-arm64.tar.gz"
-      sha256 "f1fed2d0dbd92a57f767607e764e792a04351e355bf47a2eb41814bbb0272061"
+      sha256 "3d11289c2497b40dfbb6e50989d6ed960fbefed713160c696a5538e3470adeca"
     end
   end
 
