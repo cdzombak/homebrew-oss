@@ -5,32 +5,32 @@
 class LycheeBwTagger < Formula
   desc "Tag the black & white photos in your lychee photo library"
   homepage "https://github.com/cdzombak/lychee-bw-tagger"
-  url "https://github.com/cdzombak/lychee-bw-tagger/archive/refs/tags/v0.0.1.tar.gz"
-  version "0.0.1"
-  sha256 "301d9f26c3eb7c85c69d743c2a6adf3ad0775b8202c0a3b77cdfdbf3acfbfdea"
+  url "https://github.com/cdzombak/lychee-bw-tagger/archive/refs/tags/v1.0.0.tar.gz"
+  version "1.0.0"
+  sha256 "351aa27d683ff244364975a61a416957c311d751bc97be1971cfca7d639b4266"
   license "GPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/lychee-bw-tagger/releases/download/v0.0.1/lychee-bw-tagger-0.0.1-darwin-amd64.tar.gz"
-      sha256 "a8d81754f2cadf5a2fbfd1ea4f9c0ee76d218780d1a5d4e80e495d1e70c57440"
+      url "https://github.com/cdzombak/lychee-bw-tagger/releases/download/v1.0.0/lychee-bw-tagger-1.0.0-darwin-amd64.tar.gz"
+      sha256 "8391396afab4067813d89a0f88a7888d1ee8fa705c8105553b0120017cff2428"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/lychee-bw-tagger/releases/download/v0.0.1/lychee-bw-tagger-0.0.1-darwin-arm64.tar.gz"
-      sha256 "c50c9a4180b230e3fd155bd4905f02e84c459f5d11d62cec6a5710a134675bd8"
+      url "https://github.com/cdzombak/lychee-bw-tagger/releases/download/v1.0.0/lychee-bw-tagger-1.0.0-darwin-arm64.tar.gz"
+      sha256 "4024c03cea0a223a04efca858d080104e2ab60b95fb06968a68790e1556cfd0a"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/lychee-bw-tagger/releases/download/v0.0.1/lychee-bw-tagger-0.0.1-linux-amd64.tar.gz"
-      sha256 "7c0cd577873f141272989f5a64bb20072bae290ae6a7d0f5490a0ebb18eead67"
+      url "https://github.com/cdzombak/lychee-bw-tagger/releases/download/v1.0.0/lychee-bw-tagger-1.0.0-linux-amd64.tar.gz"
+      sha256 "a3e1249fe5f3b44a9ebb1c0d5567fd035179091e9069b6eb710aaa8a0f139c54"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/lychee-bw-tagger/releases/download/v0.0.1/lychee-bw-tagger-0.0.1-linux-arm64.tar.gz"
-      sha256 "3ca61e73ea3cc6593f95cebb6655760790593578b69c5237f23a976a222f2da4"
+      url "https://github.com/cdzombak/lychee-bw-tagger/releases/download/v1.0.0/lychee-bw-tagger-1.0.0-linux-arm64.tar.gz"
+      sha256 "c3286ef59b0a74f24cffd636269d858e298c32e68505e7cf90ba96e05ada7285"
     end
   end
 
@@ -39,6 +39,6 @@ class LycheeBwTagger < Formula
   end
 
   test do
-    assert_match("0.0.1", shell_output("#{bin}/lychee-bw-tagger -version"))
+    assert_match("1.0.0", shell_output("#{bin}/lychee-bw-tagger -version"))
   end
 end
