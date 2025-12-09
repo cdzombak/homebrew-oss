@@ -5,32 +5,32 @@
 class HumidityReminder < Formula
   desc "Get email reminders when the ideal indoor humidity changes"
   homepage "https://github.com/cdzombak/humidity-reminder"
-  url "https://github.com/cdzombak/humidity-reminder/archive/refs/tags/v1.0.1.tar.gz"
-  version "1.0.1"
-  sha256 "f29c9560fd1a4645145ad2b9f6e21c9327a47871c8fd59d0ffe1f88bfb9e5709"
+  url "https://github.com/cdzombak/humidity-reminder/archive/refs/tags/v1.0.2.tar.gz"
+  version "1.0.2"
+  sha256 "8cb8de524f9955eb4ecca1cd37a9a0bea66f356949c70e3755f38d4b8a7a1920"
   license "GPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/humidity-reminder/releases/download/v1.0.1/humidity-reminder-1.0.1-darwin-amd64.tar.gz"
-      sha256 "00fd8bbc07850e704836381cd82331150223cd1f790562c5219278183d043fec"
+      url "https://github.com/cdzombak/humidity-reminder/releases/download/v1.0.2/humidity-reminder-1.0.2-darwin-amd64.tar.gz"
+      sha256 "5b108a8637ba54d915579f04fe56bbe801b9a48390e12efcb8f08431fb0628f7"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/humidity-reminder/releases/download/v1.0.1/humidity-reminder-1.0.1-darwin-arm64.tar.gz"
-      sha256 "b58c5edbeab20cb65e3510f17b6807d546afee29efa27b1b02e9d49e2841a9b3"
+      url "https://github.com/cdzombak/humidity-reminder/releases/download/v1.0.2/humidity-reminder-1.0.2-darwin-arm64.tar.gz"
+      sha256 "e1ae72e4a2671c46a5fa0a90fb345b8e0dd85563360a1a08dc085a2428fa54b1"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/humidity-reminder/releases/download/v1.0.1/humidity-reminder-1.0.1-linux-amd64.tar.gz"
-      sha256 "b06a5f6d38f2a723766f74bd872519d80270ae8f3ff2634fe7f518ce9ffac940"
+      url "https://github.com/cdzombak/humidity-reminder/releases/download/v1.0.2/humidity-reminder-1.0.2-linux-amd64.tar.gz"
+      sha256 "fafa353b17ce000d4033b7c2a13bdd7b11de12b192b2b9da06f2eef8b339acf9"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/humidity-reminder/releases/download/v1.0.1/humidity-reminder-1.0.1-linux-arm64.tar.gz"
-      sha256 "c35f31a0f12ef70954188041ab64f04834336c87f033f4655d037030705cc6a5"
+      url "https://github.com/cdzombak/humidity-reminder/releases/download/v1.0.2/humidity-reminder-1.0.2-linux-arm64.tar.gz"
+      sha256 "9db53c3e3bfda28332c7968f72c3894301990b44ad45c1cde138039832f6a4bf"
     end
   end
 
@@ -39,6 +39,6 @@ class HumidityReminder < Formula
   end
 
   test do
-    assert_match("1.0.1", shell_output("#{bin}/humidity-reminder -version"))
+    assert_match("1.0.2", shell_output("#{bin}/humidity-reminder -version"))
   end
 end
