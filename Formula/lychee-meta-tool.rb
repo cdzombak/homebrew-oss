@@ -5,32 +5,32 @@
 class LycheeMetaTool < Formula
   desc "Quickly find & edit untitled photos in your lychee photo library"
   homepage "https://github.com/cdzombak/lychee-meta-tool"
-  url "https://github.com/cdzombak/lychee-meta-tool/archive/refs/tags/v1.1.2.tar.gz"
-  version "1.1.2"
-  sha256 "17675d9de77172be455f928a400724266fb37a9a7c823435e7a5eb037ff4c433"
+  url "https://github.com/cdzombak/lychee-meta-tool/archive/refs/tags/v1.1.3.tar.gz"
+  version "1.1.3"
+  sha256 "7977a7bc5c2e52e137073d7403f5253c6d10a8021c2e0980b4ffe1287867acfa"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/lychee-meta-tool/releases/download/v1.1.2/lychee-meta-tool-1.1.2-darwin-amd64.tar.gz"
-      sha256 "b1d2e339ea996e0a4032fe6247e8c2bcf6b3e826a3ce2e3fc468f815742c3b24"
+      url "https://github.com/cdzombak/lychee-meta-tool/releases/download/v1.1.3/lychee-meta-tool-1.1.3-darwin-amd64.tar.gz"
+      sha256 "4ff9ad9ceae30195a7ba0815b471633e30a3f8bcfc6b1784f220c27c5fe8d265"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/lychee-meta-tool/releases/download/v1.1.2/lychee-meta-tool-1.1.2-darwin-arm64.tar.gz"
-      sha256 "4bc6e677a3e080de404054e2515cc6b72f47ce0646e965376595bef521c78bcd"
+      url "https://github.com/cdzombak/lychee-meta-tool/releases/download/v1.1.3/lychee-meta-tool-1.1.3-darwin-arm64.tar.gz"
+      sha256 "eb283c9f8976327aa7f348983435f53bb1f3a39dba31884be2e249f9fc76bca2"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/lychee-meta-tool/releases/download/v1.1.2/lychee-meta-tool-1.1.2-linux-amd64.tar.gz"
-      sha256 "c2c5dd7ce27ea6a61a2a6a386c94cbe9541091091649f8f19762086d17fe8341"
+      url "https://github.com/cdzombak/lychee-meta-tool/releases/download/v1.1.3/lychee-meta-tool-1.1.3-linux-amd64.tar.gz"
+      sha256 "512a957f7e33d69751a688a65bffa32c663f7ab63c4f70a159309fe6edf361f1"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/lychee-meta-tool/releases/download/v1.1.2/lychee-meta-tool-1.1.2-linux-arm64.tar.gz"
-      sha256 "0bde3af672690eb961b3573f399b8a69506112c3dd25c941ad11e43070a3bd4d"
+      url "https://github.com/cdzombak/lychee-meta-tool/releases/download/v1.1.3/lychee-meta-tool-1.1.3-linux-arm64.tar.gz"
+      sha256 "446af4531290d469168b1addeceeee1caec154fee01a7dd0fd4abf0037d04469"
     end
   end
 
@@ -39,6 +39,6 @@ class LycheeMetaTool < Formula
   end
 
   test do
-    assert_match("1.1.2", shell_output("#{bin}/lychee-meta-tool version"))
+    assert_match("1.1.3", shell_output("#{bin}/lychee-meta-tool version"))
   end
 end
