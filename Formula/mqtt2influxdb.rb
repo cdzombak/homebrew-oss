@@ -5,32 +5,32 @@
 class Mqtt2influxdb < Formula
   desc "Opinionated and intentionally scope-limited mqtt to influxdb bridge"
   homepage "https://github.com/cdzombak/mqtt2influxdb"
-  url "https://github.com/cdzombak/mqtt2influxdb/archive/refs/tags/v1.0.0.tar.gz"
-  version "1.0.0"
-  sha256 "c0d5869bc33db93180486c828d47aca38e2b504e1f2e58236190915ea7c9d2da"
+  url "https://github.com/cdzombak/mqtt2influxdb/archive/refs/tags/v1.0.1.tar.gz"
+  version "1.0.1"
+  sha256 "3bd56265d64bc750e3a8724727488f55cfc3cbb36187cfb72dcd2cf550f4ed50"
   license "LGPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/mqtt2influxdb/releases/download/v1.0.0/mqtt2influxdb-1.0.0-darwin-amd64.tar.gz"
-      sha256 "f7041cb62e432fd1495b084c63e1111c7ae46593f6b2caa7f2cb6040cb38137e"
+      url "https://github.com/cdzombak/mqtt2influxdb/releases/download/v1.0.1/mqtt2influxdb-1.0.1-darwin-amd64.tar.gz"
+      sha256 "2317d8d542443eabff640201a5f24b23ca8673cf74f1a06def26204688a575e2"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/mqtt2influxdb/releases/download/v1.0.0/mqtt2influxdb-1.0.0-darwin-arm64.tar.gz"
-      sha256 "9f59bae29f9b4eed257d128171fc077089006d774fcc63d94229b854b941f12a"
+      url "https://github.com/cdzombak/mqtt2influxdb/releases/download/v1.0.1/mqtt2influxdb-1.0.1-darwin-arm64.tar.gz"
+      sha256 "90ebe9492e34cf79f5292a3a7d7777e942f7021ce16802949b1e943df9814263"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/mqtt2influxdb/releases/download/v1.0.0/mqtt2influxdb-1.0.0-linux-amd64.tar.gz"
-      sha256 "bf6dfd659cb38b38161b9800a436e6306dfc44bb67b876626537b142ceebf910"
+      url "https://github.com/cdzombak/mqtt2influxdb/releases/download/v1.0.1/mqtt2influxdb-1.0.1-linux-amd64.tar.gz"
+      sha256 "1af746e6f471ff4ba952f20affe60803ba6339ed07fe07470394f8c5946db137"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/mqtt2influxdb/releases/download/v1.0.0/mqtt2influxdb-1.0.0-linux-arm64.tar.gz"
-      sha256 "abffce65e39a9306823c7ce64955bdfe17e0ba4fcd804e128f0155b28fce848e"
+      url "https://github.com/cdzombak/mqtt2influxdb/releases/download/v1.0.1/mqtt2influxdb-1.0.1-linux-arm64.tar.gz"
+      sha256 "0bcc5f4205c743120b464f298c39b733a62ea924c33f3c8983192db655e511d9"
     end
   end
 
@@ -39,6 +39,6 @@ class Mqtt2influxdb < Formula
   end
 
   test do
-    assert_match("1.0.0", shell_output("#{bin}/mqtt2influxdb -version"))
+    assert_match("1.0.1", shell_output("#{bin}/mqtt2influxdb -version"))
   end
 end
