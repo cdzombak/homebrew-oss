@@ -5,32 +5,32 @@
 class WxStaAggInflux < Formula
   desc "Aggregator for wind and rain data stored in influxdb"
   homepage "https://github.com/cdzombak/wx-sta-agg-influx"
-  url "https://github.com/cdzombak/wx-sta-agg-influx/archive/refs/tags/v1.0.2.tar.gz"
-  version "1.0.2"
-  sha256 "2922a42e310dfe225d0ed930b0d8b8acefa7fe91b2c707b69f5b367d7716627f"
+  url "https://github.com/cdzombak/wx-sta-agg-influx/archive/refs/tags/v1.0.3.tar.gz"
+  version "1.0.3"
+  sha256 "fc7ed95a2438739dcb2f7749695bc702faf08652bcd1a6d38ae2b74b7bda9750"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/wx-sta-agg-influx/releases/download/v1.0.2/wx-sta-agg-influx-1.0.2-darwin-amd64.tar.gz"
-      sha256 "aa35a9422ea145867bb4932b3ff5b1da213d1d8f4908de1e9942d49f95f6cf25"
+      url "https://github.com/cdzombak/wx-sta-agg-influx/releases/download/v1.0.3/wx-sta-agg-influx-1.0.3-darwin-amd64.tar.gz"
+      sha256 "599e7fd7fe7234594942283d8dcc57dda58fd9a17e17077cbde4ae069cae1b61"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/wx-sta-agg-influx/releases/download/v1.0.2/wx-sta-agg-influx-1.0.2-darwin-arm64.tar.gz"
-      sha256 "fbb67defc6e0c7bfc7af65a0ac2a26e77a2163bd6cd5c2242bb0c37bea514834"
+      url "https://github.com/cdzombak/wx-sta-agg-influx/releases/download/v1.0.3/wx-sta-agg-influx-1.0.3-darwin-arm64.tar.gz"
+      sha256 "592d5c09a87199d24f4ae660600699baa8a322ced8b87cfb1a5aeecc6b0ebffa"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/wx-sta-agg-influx/releases/download/v1.0.2/wx-sta-agg-influx-1.0.2-linux-amd64.tar.gz"
-      sha256 "f1cf00414b27f0b31b7cca2bd7ffe449aad9b90339e0715bf0f02a627ab8d132"
+      url "https://github.com/cdzombak/wx-sta-agg-influx/releases/download/v1.0.3/wx-sta-agg-influx-1.0.3-linux-amd64.tar.gz"
+      sha256 "d69e22e09e8912befc5c7b85da006f0204ae671062a5a7e68cec8c97e63c096c"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/wx-sta-agg-influx/releases/download/v1.0.2/wx-sta-agg-influx-1.0.2-linux-arm64.tar.gz"
-      sha256 "fa1a6f75f097920a29e84d37def052fed06542a09efceb452d5f748769b11b2e"
+      url "https://github.com/cdzombak/wx-sta-agg-influx/releases/download/v1.0.3/wx-sta-agg-influx-1.0.3-linux-arm64.tar.gz"
+      sha256 "6b2ede0c9eae5507a58f6a9117eabda282a458b3aae0c2bfd0a0b6789c370656"
     end
   end
 
@@ -39,6 +39,6 @@ class WxStaAggInflux < Formula
   end
 
   test do
-    assert_match("1.0.2", shell_output("#{bin}/wx-sta-agg-influx -version"))
+    assert_match("1.0.3", shell_output("#{bin}/wx-sta-agg-influx -version"))
   end
 end
