@@ -1,6 +1,6 @@
 cask "bandwidther" do
-  version "0.0.4"
-  sha256 "f9b7b0803ed7563de6687f918dbc0229541636775d0a686281eae772848a5135"
+  version "1.0.0"
+  sha256 "c2f4994e2e2f348d00c59e7b0d483023396b30757201e0efdcc2d9aecdfbaf6d"
 
   url "https://github.com/cdzombak/bandwidther/releases/download/v#{version}/Bandwidther.dmg"
   name "Bandwidther"
