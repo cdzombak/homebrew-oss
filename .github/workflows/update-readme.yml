@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - "Formula/*.rb"
+      - "Casks/*.rb"
   workflow_dispatch:
 
 jobs:
@@ -30,47 +31,56 @@ jobs:
           #!/bin/bash
           set -euo pipefail
 
-          # Generate new table content
+          extract_field() {
+            local file="$1"
+            local field="$2"
+
+            INPUT_FILE="$file" INPUT_FIELD="$field" ruby <<'RUBY'
+          content = File.read(ENV.fetch("INPUT_FILE"))
+          field = ENV.fetch("INPUT_FIELD")
+          match = content.match(/#{Regexp.escape(field)}\s+["']([^"']*)["']/)
+          puts(match ? match[1] : "")
+          RUBY
+          }
+
+          emit_table() {
+            local directory="$1"
+            local install_prefix="$2"
+
+            for package in "$directory"/*.rb; do
+              if [[ -f "$package" ]]; then
+                package_name=$(basename "$package" .rb)
+                desc=$(extract_field "$package" "desc")
+                homepage=$(extract_field "$package" "homepage")
+
+                if [[ -z "$desc" ]]; then
+                  desc="No description available"
+                fi
+
+                if [[ -n "$homepage" ]]; then
+                  project_link="[$package_name]($homepage)"
+                else
+                  project_link="$package_name"
+                fi
+
+                echo "| $project_link | $desc | \`$install_prefix$package_name\` |"
+              fi
+            done | sort -f
+          }
+
           {
           echo ""
+          echo "### Formulae"
+          echo ""
           echo "| Software | Description | Install Command |"
-          echo "| -------- | ----------- | -----------------|"
-
-          # Parse all formula files and extract info
-          for formula in Formula/*.rb; do
-            if [[ -f "$formula" ]]; then
-              # Extract formula name from filename
-              formula_name=$(basename "$formula" .rb)
-
-              # Extract description and homepage using Ruby parsing
-              desc=$(ruby -e "
-                content = File.read('$formula')
-                if content =~ /desc\s+[\"']([^\"']*)[\"']/
-                  puts \$1
-                else
-                  puts 'No description available'
-                end
-              ")
-
-              homepage=$(ruby -e "
-                content = File.read('$formula')
-                if content =~ /homepage\s+[\"']([^\"']*)[\"']/
-                  puts \$1
-                else
-                  puts ''
-                end
-              ")
-
-              # Generate table row
-              if [[ -n "$homepage" ]]; then
-                project_link="[$formula_name]($homepage)"
-              else
-                project_link="$formula_name"
-              fi
-
-              echo "| $project_link | $desc | \`brew install $formula_name\` |"
-            fi
-          done | sort -f
+          echo "| -------- | ----------- | ---------------- |"
+          emit_table "Formula" "brew install "
+          echo ""
+          echo "### Casks"
+          echo ""
+          echo "| Software | Description | Install Command |"
+          echo "| -------- | ----------- | ---------------- |"
+          emit_table "Casks" "brew install --cask "
           echo ""
           } > /tmp/new_table.md
 

@@ -1,17 +1,24 @@
 # @cdzombak/oss
 
-## How do I install these formulae?
+## How do I install these packages?
 
-`brew install cdzombak/oss/<formula>`
+Formulae: `brew install cdzombak/oss/<formula>`
 
-Or `brew tap cdzombak/oss` and then `brew install <formula>`.
+Casks: `brew install --cask cdzombak/oss/<cask>`
+
+Or `brew tap cdzombak/oss` and then:
+
+- Formulae: `brew install <formula>`
+- Casks: `brew install --cask <cask>`
 
 ## Available Software
 
 <!-- project_table_start -->
 
+### Formulae
+
 | Software | Description | Install Command |
-| -------- | ----------- | -----------------|
+| -------- | ----------- | ---------------- |
 | [aclaude](https://github.com/cdzombak/aclaude) | Claude Code launcher for alternate models | `brew install aclaude` |
 | [bt-env-mqtt](https://github.com/cdzombak/bt-env-mqtt) | Macos tool that publishes details about nearby bluetooth devices to mqtt | `brew install bt-env-mqtt` |
 | [cidrtool](https://github.com/cdzombak/cidrtool) | Simple command-line tool for manipulating CIDR blocks | `brew install cidrtool` |
@@ -58,5 +65,11 @@ Or `brew tap cdzombak/oss` and then `brew install <formula>`.
 | [wx-sta-agg-influx](https://github.com/cdzombak/wx-sta-agg-influx) | Aggregator for wind and rain data stored in influxdb | `brew install wx-sta-agg-influx` |
 | [wxcal](https://github.com/cdzombak/wxcal) | Generate an ical feed from the weathergov forecast api | `brew install wxcal` |
 | [xtool](https://github.com/cdzombak/xtool) | Photography workflow helper, mainly focused on exif operations | `brew install xtool` |
+
+### Casks
+
+| Software | Description | Install Command |
+| -------- | ----------- | ---------------- |
+| [bandwidther](https://github.com/cdzombak/bandwidther) | Menu bar app for monitoring application bandwidth use | `brew install --cask bandwidther` |
 
 <!-- project_table_end -->
