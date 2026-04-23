@@ -74,13 +74,13 @@ jobs:
           echo ""
           echo "| Software | Description | Install Command |"
           echo "| -------- | ----------- | ---------------- |"
-          emit_table "Formula" "brew install "
+          emit_table "Formula" "brew install cdzombak/oss/"
           echo ""
           echo "### Casks"
           echo ""
           echo "| Software | Description | Install Command |"
           echo "| -------- | ----------- | ---------------- |"
-          emit_table "Casks" "brew install --cask "
+          emit_table "Casks" "brew install --cask cdzombak/oss/"
           echo ""
           } > /tmp/new_table.md
 
