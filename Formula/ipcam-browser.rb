@@ -5,32 +5,32 @@
 class IpcamBrowser < Formula
   desc "Improved media browser for sd card storage on sv3c/camhipro compatible ip webcam"
   homepage "https://github.com/cdzombak/ipcam-browser"
-  url "https://github.com/cdzombak/ipcam-browser/archive/refs/tags/v1.0.0.tar.gz"
-  version "1.0.0"
-  sha256 "f160d4f5354546c1e658df8d640e4f8db69790be26c31f6b36e266168fee5e8d"
+  url "https://github.com/cdzombak/ipcam-browser/archive/refs/tags/v1.1.0.tar.gz"
+  version "1.1.0"
+  sha256 "f8b3f3f427b6979a3d484f67df393e6959c41dd884e74a2dc4ba52984700c90a"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/ipcam-browser/releases/download/v1.0.0/ipcam-browser-1.0.0-darwin-amd64.tar.gz"
-      sha256 "e6188baf5bb7385680b5793013a2b86fe7ed2b05d3fa46de1729f160936840b4"
+      url "https://github.com/cdzombak/ipcam-browser/releases/download/v1.1.0/ipcam-browser-1.1.0-darwin-amd64.tar.gz"
+      sha256 "27b690e73783b36ddcb7d80bd47f179516aebd7dbc52a7d6d7994a78ee9b0592"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/ipcam-browser/releases/download/v1.0.0/ipcam-browser-1.0.0-darwin-arm64.tar.gz"
-      sha256 "400cb592182f50ce29b36b047e373128165e3d43a4ea853f38b81f4df4693b1f"
+      url "https://github.com/cdzombak/ipcam-browser/releases/download/v1.1.0/ipcam-browser-1.1.0-darwin-arm64.tar.gz"
+      sha256 "4967bb22876ff3e538511f1574c98df29b49d372c93777eef5a5ecd2816e7173"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/ipcam-browser/releases/download/v1.0.0/ipcam-browser-1.0.0-linux-amd64.tar.gz"
-      sha256 "ee69cdd96eac009130800d4481c5e73a6f44bad3e2e7c249f69e4af832a57620"
+      url "https://github.com/cdzombak/ipcam-browser/releases/download/v1.1.0/ipcam-browser-1.1.0-linux-amd64.tar.gz"
+      sha256 "42b97b9b4ef168359aa794e60d0f7b77f952b311445bab40b071bccb57617a8d"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/ipcam-browser/releases/download/v1.0.0/ipcam-browser-1.0.0-linux-arm64.tar.gz"
-      sha256 "c772a44fbdfd7ffa65dffdbd22bb4c766b9cd29ebba8567746fdd21971ec4127"
+      url "https://github.com/cdzombak/ipcam-browser/releases/download/v1.1.0/ipcam-browser-1.1.0-linux-arm64.tar.gz"
+      sha256 "97a21bdc676845fd573c3c6f8fe7cf43f265d24406630fd58fbc91847c58a1b7"
     end
   end
 
@@ -39,6 +39,6 @@ class IpcamBrowser < Formula
   end
 
   test do
-    assert_match("1.0.0", shell_output("#{bin}/ipcam-browser -version"))
+    assert_match("1.1.0", shell_output("#{bin}/ipcam-browser -version"))
   end
 end
