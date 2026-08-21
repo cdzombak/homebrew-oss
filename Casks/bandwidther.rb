@@ -7,5 +7,7 @@ cask "bandwidther" do
   desc "Menu bar app for monitoring application bandwidth use"
   homepage "https://github.com/cdzombak/bandwidther"
 
+  depends_on macos: :sonoma
+
   app "Bandwidther.app"
 end

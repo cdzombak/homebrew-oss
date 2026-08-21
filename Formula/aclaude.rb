@@ -11,8 +11,8 @@ class Aclaude < Formula
 
   depends_on "bash"
   depends_on "curl"
-  depends_on "jq"
   depends_on "fzf"
+  depends_on "jq"
 
   def install
     bin.install "aclaude"
