@@ -5,32 +5,32 @@
 class Purpleair2mqtt < Formula
   desc "Pull sensor data from your local purpleair sensors - no cloud needed"
   homepage "https://github.com/cdzombak/purpleair2mqtt"
-  url "https://github.com/cdzombak/purpleair2mqtt/archive/refs/tags/v1.0.0.tar.gz"
-  version "1.0.0"
-  sha256 "a74e8c262994638305ce07f3dbff72297e946a70d60dd65b22cdffefaf304ff2"
-  license "NOASSERTION"
+  url "https://github.com/cdzombak/purpleair2mqtt/archive/refs/tags/v1.1.1.tar.gz"
+  version "1.1.1"
+  sha256 "6098188bfa8e5f96cf63afeab0f57ea2b1990083eec2123baf045f61adb94fc5"
+  license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/purpleair2mqtt/releases/download/v1.0.0/purpleair2mqtt-1.0.0-darwin-amd64.tar.gz"
-      sha256 "c91636beea13cc22b2f140267c397ed1959ce910ae23cce76340555df9279aaa"
+      url "https://github.com/cdzombak/purpleair2mqtt/releases/download/v1.1.1/purpleair2mqtt-1.1.1-darwin-amd64.tar.gz"
+      sha256 "b42bd69c59d6373743c6a5ec9f6dadd901f25f13bfd47e5664e664f6fd0f2244"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/purpleair2mqtt/releases/download/v1.0.0/purpleair2mqtt-1.0.0-darwin-arm64.tar.gz"
-      sha256 "807f4121c36b6b505a49ca5ef65fd937bbd5379e1e6953e5373ad6accb11ad49"
+      url "https://github.com/cdzombak/purpleair2mqtt/releases/download/v1.1.1/purpleair2mqtt-1.1.1-darwin-arm64.tar.gz"
+      sha256 "c9f35138a1b99f953b5bbbcee8782ff14bd24f6dd257ab8ba4b34d2c5191b549"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/purpleair2mqtt/releases/download/v1.0.0/purpleair2mqtt-1.0.0-linux-amd64.tar.gz"
-      sha256 "922d218123b0a711640a127b7de7b97dffa412b0667d7d16227b5a0b25247bdc"
+      url "https://github.com/cdzombak/purpleair2mqtt/releases/download/v1.1.1/purpleair2mqtt-1.1.1-linux-amd64.tar.gz"
+      sha256 "4ce0105b4ac0c9eedd8a235fbc81ef6c3fb7f34b5f11109e137703c4edc78e5f"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/purpleair2mqtt/releases/download/v1.0.0/purpleair2mqtt-1.0.0-linux-arm64.tar.gz"
-      sha256 "0dc0b6aeff7ad841c16d526edcb0904f4b67918b97696f470a092aa684ac5610"
+      url "https://github.com/cdzombak/purpleair2mqtt/releases/download/v1.1.1/purpleair2mqtt-1.1.1-linux-arm64.tar.gz"
+      sha256 "40698d604c0ce94ed2736f63bd9b78fc766d4bc54734a69575816b1d31a2deb1"
     end
   end
 
@@ -39,6 +39,6 @@ class Purpleair2mqtt < Formula
   end
 
   test do
-    assert_match("1.0.0", shell_output("#{bin}/purpleair2mqtt -version"))
+    assert_match("1.1.1", shell_output("#{bin}/purpleair2mqtt -version"))
   end
 end
