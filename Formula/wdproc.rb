@@ -5,19 +5,21 @@
 class Wdproc < Formula
   desc "Add files synced from writerdeck to day one or things"
   homepage "https://github.com/cdzombak/wdproc"
-  url "https://github.com/cdzombak/wdproc/archive/refs/tags/v1.0.0.tar.gz"
-  version "1.0.0"
-  sha256 "b536e56ba74ef5cac6f71f0c634b2466e9bcbe1e35ec23553a9c0b221c374741"
+  url "https://github.com/cdzombak/wdproc/archive/refs/tags/v1.0.1.tar.gz"
+  version "1.0.1"
+  sha256 "6e2246e2fbb56f09d4ddce7b87bf9d2d7e23e21c518fed553f8ee52a93943a83"
   license "MIT"
 
   on_macos do
-    on_arm do
-      url "https://github.com/cdzombak/wdproc/releases/download/v1.0.0/wdproc-1.0.0-darwin-arm64.tar.gz"
-      sha256 "13a3f451a87cee18f4d36609d9040c783ec7656a6727053a3c16dbc41a7d6feb"
+    on_intel do
+      url "https://github.com/cdzombak/wdproc/releases/download/v1.0.1/wdproc-1.0.1-darwin-amd64.tar.gz"
+      sha256 "3f9850bfd0f7b877d7142acbbf2b3546874d1b1d3cb18b4916687a143f720adb"
     end
-  end
 
-  on_linux do
+    on_arm do
+      url "https://github.com/cdzombak/wdproc/releases/download/v1.0.1/wdproc-1.0.1-darwin-arm64.tar.gz"
+      sha256 "f308ad3a9d6592be0dcdc8067e16ee5c6e065976568513c4e08d40df125e977e"
+    end
   end
 
   def install
@@ -25,6 +27,6 @@ class Wdproc < Formula
   end
 
   test do
-    assert_match("1.0.0", shell_output("#{bin}/wdproc version"))
+    assert_match("1.0.1", shell_output("#{bin}/wdproc version"))
   end
 end
