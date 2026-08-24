@@ -5,15 +5,33 @@
 class Mqttwxenrich < Formula
   desc "Enrich mqtt messages from weather sensors with unit conversion and supplemental"
   homepage "https://github.com/cdzombak/mqttwxenrich"
-  url "https://github.com/cdzombak/mqttwxenrich/archive/refs/tags/v0.0.5.tar.gz"
-  version "0.0.5"
-  sha256 "25af840c023b4794f2c670b5296b5362bcc41af6c6c088f4fbe8b0ef1c4d7adf"
+  url "https://github.com/cdzombak/mqttwxenrich/archive/refs/tags/v0.0.6.tar.gz"
+  version "0.0.6"
+  sha256 "91182a4653d10d4ed5cbd55f21064759986498c02c6f112de8e3adf03e4cc11c"
   license "LGPL-3.0"
 
   on_macos do
+    on_intel do
+      url "https://github.com/cdzombak/mqttwxenrich/releases/download/v0.0.6/mqttwxenrich-0.0.6-darwin-amd64.tar.gz"
+      sha256 "3d58e51b4af15e83f61bfc01a6eec94800ae46c7fa2f38bea81f8d494916fdfb"
+    end
+
+    on_arm do
+      url "https://github.com/cdzombak/mqttwxenrich/releases/download/v0.0.6/mqttwxenrich-0.0.6-darwin-arm64.tar.gz"
+      sha256 "5e4150ed6d6d966a53cef7b59b8000ff934e8a7231a3210bb9befc2362132a12"
+    end
   end
 
   on_linux do
+    on_intel do
+      url "https://github.com/cdzombak/mqttwxenrich/releases/download/v0.0.6/mqttwxenrich-0.0.6-linux-amd64.tar.gz"
+      sha256 "ab0c67e82500dfaf73bcca70a0b9a072271ba605238c2e25cb745cee5647f843"
+    end
+
+    on_arm do
+      url "https://github.com/cdzombak/mqttwxenrich/releases/download/v0.0.6/mqttwxenrich-0.0.6-linux-arm64.tar.gz"
+      sha256 "d69f409c64c14cc947c67e3c3ddcde4b0a591b9ac8753a35768a0753cab24516"
+    end
   end
 
   def install
@@ -21,6 +39,6 @@ class Mqttwxenrich < Formula
   end
 
   test do
-    assert_match("0.0.5", shell_output("#{bin}/mqttwxenrich -version"))
+    assert_match("0.0.6", shell_output("#{bin}/mqttwxenrich -version"))
   end
 end
