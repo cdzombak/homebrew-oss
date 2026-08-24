@@ -5,34 +5,34 @@
 class Papercast < Formula
   desc "Generate a personal podcast of your instapaper reading queue"
   homepage "https://github.com/cdzombak/papercast"
-  url "https://github.com/cdzombak/papercast/archive/refs/tags/v0.0.1.tar.gz"
-  version "0.0.1"
-  sha256 "eb9618ca9686ec378c8df5b099ac2652f5ad8455311cc2e2fb6d3d3fd0017b25"
+  url "https://github.com/cdzombak/papercast/archive/refs/tags/v0.0.2.tar.gz"
+  version "0.0.2"
+  sha256 "e397b21b02e9307ce0d1b03c69b461960d6f90fef12fb75cc51005aec3c0d06e"
   license "MIT"
 
   depends_on "ffmpeg"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/papercast/releases/download/v0.0.1/papercast-0.0.1-darwin-amd64.tar.gz"
-      sha256 "0888c9ce43412bc0fc1fe07a12d3df4a050255d199386ecd4a3bff24eafc7a77"
+      url "https://github.com/cdzombak/papercast/releases/download/v0.0.2/papercast-0.0.2-darwin-amd64.tar.gz"
+      sha256 "9c0490fdf0d6894defc6ba6ac4812ef6ac1940eac1df4a8b425d6f04ac3c9cc6"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/papercast/releases/download/v0.0.1/papercast-0.0.1-darwin-arm64.tar.gz"
-      sha256 "04f1c8f22ffd889e0c3131af5b3af6597c88ffd5de1b7b5b21d3a3b45f0b3fbb"
+      url "https://github.com/cdzombak/papercast/releases/download/v0.0.2/papercast-0.0.2-darwin-arm64.tar.gz"
+      sha256 "e0533cfdef0d7b29b5473bc4a6791b0c6dff493bb91cbe3c31aa7e271505f6f0"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/papercast/releases/download/v0.0.1/papercast-0.0.1-linux-amd64.tar.gz"
-      sha256 "5fa0885585abccd8f88f1a22f2fc472af4259a119cf52b903b21fe36b159dee9"
+      url "https://github.com/cdzombak/papercast/releases/download/v0.0.2/papercast-0.0.2-linux-amd64.tar.gz"
+      sha256 "acea726bb38507781ef04fb7dfd8c8cd8ef70b243bc53b368596b60a4266db9c"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/papercast/releases/download/v0.0.1/papercast-0.0.1-linux-arm64.tar.gz"
-      sha256 "4c2c07ce741c817d99083c2709492c445d3bdf4a1e7b6dd509e953cd26b56f1b"
+      url "https://github.com/cdzombak/papercast/releases/download/v0.0.2/papercast-0.0.2-linux-arm64.tar.gz"
+      sha256 "b7e58a8fd2a9a493659358f2a12ed69e2141ae75a014d9194f4ac3f2aa585925"
     end
   end
 
@@ -41,6 +41,6 @@ class Papercast < Formula
   end
 
   test do
-    assert_match("0.0.1", shell_output("#{bin}/papercast -version"))
+    assert_match("0.0.2", shell_output("#{bin}/papercast -version"))
   end
 end
