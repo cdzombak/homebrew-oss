@@ -5,32 +5,32 @@
 class EbirdRss < Formula
   desc "Generate an rss, atom, or json feed of your most recent bird sightings from an e"
   homepage "https://github.com/cdzombak/ebird-rss"
-  url "https://github.com/cdzombak/ebird-rss/archive/refs/tags/v0.0.2.tar.gz"
-  version "0.0.2"
-  sha256 "7a172f90a34de9ae47d94684690a78353d09848f29777c2da55dd26e92c3d435"
+  url "https://github.com/cdzombak/ebird-rss/archive/refs/tags/v0.0.3.tar.gz"
+  version "0.0.3"
+  sha256 "6951e3df66e9d208088e596efdf77eb27238a6a988fad9484db9998af652c70e"
   license "GPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/cdzombak/ebird-rss/releases/download/v0.0.2/ebird-rss-0.0.2-darwin-amd64.tar.gz"
-      sha256 "ba6b14b55b1dbebe64161d37289236c73ef4845f0978ae16aadcaab97acef53f"
+      url "https://github.com/cdzombak/ebird-rss/releases/download/v0.0.3/ebird-rss-0.0.3-darwin-amd64.tar.gz"
+      sha256 "7fdf2047065e748b3dc85d5b6b8706ae67babb218ff22ec7bdd76e3a3ec55a26"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/ebird-rss/releases/download/v0.0.2/ebird-rss-0.0.2-darwin-arm64.tar.gz"
-      sha256 "c9394815ea53e298e5db2ac13b4503f215c77655f1e72328e709850f8dba1ddc"
+      url "https://github.com/cdzombak/ebird-rss/releases/download/v0.0.3/ebird-rss-0.0.3-darwin-arm64.tar.gz"
+      sha256 "adb2b9d36dddeeaf5b82008d3e17e2f2ac243e01c95ddb016e77cee8ef2c0bd9"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/cdzombak/ebird-rss/releases/download/v0.0.2/ebird-rss-0.0.2-linux-amd64.tar.gz"
-      sha256 "5caeb4e02dfcb6defdd6a83f260c172c2373a44f23c44334dc4dd2ae2c2bf78f"
+      url "https://github.com/cdzombak/ebird-rss/releases/download/v0.0.3/ebird-rss-0.0.3-linux-amd64.tar.gz"
+      sha256 "f5cc10273be79640eeb0a1af21a98b501e841c6c943902ac59169c2aa2a99dec"
     end
 
     on_arm do
-      url "https://github.com/cdzombak/ebird-rss/releases/download/v0.0.2/ebird-rss-0.0.2-linux-arm64.tar.gz"
-      sha256 "d28cbc71935ee05948cb39172e4340280bcc2b90e0b539ceb473a5bffa023509"
+      url "https://github.com/cdzombak/ebird-rss/releases/download/v0.0.3/ebird-rss-0.0.3-linux-arm64.tar.gz"
+      sha256 "d220de89ffb0274b120d936f38d0904a20769157003352f567205545ad9e735a"
     end
   end
 
@@ -39,6 +39,6 @@ class EbirdRss < Formula
   end
 
   test do
-    assert_match("0.0.2", shell_output("#{bin}/ebird-rss -version"))
+    assert_match("0.0.3", shell_output("#{bin}/ebird-rss -version"))
   end
 end
